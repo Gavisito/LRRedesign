@@ -43,13 +43,13 @@ body {
   gap: 5px;
   font-size: clamp(1.25rem, 2vw, 1.5rem);
   box-shadow: 1px 1px 8px #010B13;
-  background-color: #f6f3f0;
+  background-color: #F4F0EC;
   position: sticky;
   top: 0;
 }
 .container header .header-nav {
   font-size: clamp(2rem, 4vw, 3rem);
-  letter-spacing: 0.25rem;
+  letter-spacing: 0.45rem;
   width: 100%;
   height: auto;
   display: flex;
@@ -100,6 +100,7 @@ body {
   transition: 0.2s ease-in;
   padding: 0.5rem 1.5rem;
   font-size: clamp(1.25rem, 2vw, 1.5rem);
+  letter-spacing: 0.25rem;
 }
 .container header ul li a:hover {
   color: #FDEE00 !important;
@@ -148,12 +149,13 @@ body {
   gap: 2rem;
 }
 .container .content .intro h1 {
-  font-size: clamp(4rem, 4vw, 7rem);
-  width: 50%;
+  font-size: clamp(3.5rem, 4vw, 7rem);
+  min-width: 80%;
   text-wrap: balance;
   text-align: center;
   margin: auto;
   padding: 2rem 0;
+  letter-spacing: 0.35rem;
 }
 .container .content .intro .mainimg {
   display: flex;
@@ -162,7 +164,7 @@ body {
 .container .content .intro .mainimg img {
   width: 95%;
   height: auto;
-  min-height: 30rem;
+  min-height: 35rem;
   border: 5px solid white;
   outline: 5px solid #010B13;
   background-color: #0d0d38;
@@ -179,16 +181,18 @@ body {
   margin-top: 2.5rem;
 }
 .container .content .intro section h2 {
-  font-size: clamp(3rem, 4vw, 5rem);
+  font-size: clamp(2.75rem, 4vw, 5rem);
   text-align: left;
+  letter-spacing: 0.3rem;
 }
 .container .content .intro section p {
   display: flex;
   max-width: 100%;
-  font-size: clamp(1.75rem, 3vw, 2.75rem);
+  font-size: clamp(1.5rem, 3vw, 2.75rem);
   margin-left: 20vw;
   text-wrap: balance;
   padding-left: 2rem;
   border-left: 10px solid #FDEE00;
   padding-bottom: 2rem;
+  letter-spacing: 0.1rem;
 }/*# sourceMappingURL=index.css.map */
