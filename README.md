@@ -1,2 +1,2 @@
-# LRRedesign
-This is educational project where i am redesigning a french restaurant for my IT331 front end development class project.
+# xoWebsite
+This is educational project where i am making a website about my commentray on TheWeeknd songs for a IT331 class project that will be in development for the semester.
