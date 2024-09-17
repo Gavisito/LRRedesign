@@ -56,15 +56,63 @@ body {
   align-items: center;
   justify-content: space-between;
 }
+.container header .header-nav .header-buttons {
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.container header .header-nav .header-buttons .loginbutton {
+  background-color: #010B13;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: none;
+  flex-direction: column;
+  font-size: 16px;
+}
+.container header .header-nav .header-buttons .loginbutton .body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.container header .header-nav .header-buttons .loginbutton .body .head {
+  background-color: #F4F0EC;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+.container header .header-nav .header-buttons .loginbutton .body .lbody {
+  width: 12px;
+  height: 7px;
+  background-color: #F4F0EC;
+  border-radius: 30px 30px 0 0;
+}
+.container header .header-nav .header-buttons .loginbutton:hover {
+  background-color: #fde800;
+  border: 2px solid #07071e;
+}
+.container header .header-nav .header-buttons .loginbutton:hover .head {
+  background-color: #07071e;
+}
+.container header .header-nav .header-buttons .loginbutton:hover .lbody {
+  background-color: #07071e;
+}
 .container header .header-nav .menuIcon {
   display: none;
   cursor: pointer;
 }
 .container header .header-nav .menuIcon .bar {
   display: none;
-  width: 3rem;
-  height: 6px;
-  margin: 6px auto;
+  width: 1.75rem;
+  height: 4px;
+  margin: 3px auto;
   background-color: #010B13;
 }
 .container header .header-nav a {
@@ -76,7 +124,7 @@ body {
   color: #FDEE00;
   border-left: 10px solid #FDEE00;
   padding: 2.5px 2rem;
-  background-color: #0d0d38;
+  background-color: #07071e;
 }
 .container header hr {
   width: 100%;
@@ -106,12 +154,12 @@ body {
   color: #FDEE00 !important;
   border-left: 10px solid #FDEE00 !important;
   padding: 1rem 2rem;
-  background-color: #0d0d38;
+  background-color: #07071e;
 }
 .container header ul li a:focus {
   color: #FDEE00 !important;
   border-left: 10px solid #FDEE00 !important;
-  background-color: #0d0d38;
+  background-color: #07071e;
 }
 .container header ul li a:visited {
   color: #0d0d38;
@@ -140,13 +188,15 @@ body {
   height: fit-content;
   display: flex;
   flex-direction: column;
-  gap: 3rem;
+  gap: 8rem;
 }
 .container .content .intro {
   width: 95%;
   height: auto;
   margin: auto;
-  gap: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
 }
 .container .content .intro h1 {
   font-size: clamp(3.5rem, 4vw, 7rem);
@@ -154,7 +204,7 @@ body {
   text-wrap: balance;
   text-align: center;
   margin: auto;
-  padding: 2rem 0;
+  padding: 4rem 0;
   letter-spacing: 0.35rem;
 }
 .container .content .intro .mainimg {
@@ -167,12 +217,12 @@ body {
   min-height: 35rem;
   border: 5px solid white;
   outline: 5px solid #010B13;
-  background-color: #0d0d38;
+  background-color: #07071e;
 }
 .container .content .intro hr {
   width: 35%;
   height: 10px;
-  background-color: #0d0d38;
+  background-color: #07071e;
 }
 .container .content .intro section {
   display: flex;
@@ -195,4 +245,56 @@ body {
   border-left: 10px solid #FDEE00;
   padding-bottom: 2rem;
   letter-spacing: 0.1rem;
+}
+.container .content .companyCore {
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: #07071e;
+  padding: 5rem 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.container .content .companyCore h1 {
+  color: #FDEE00;
+  font-size: clamp(2.75rem, 4vw, 4rem);
+}
+.container .content .companyCore section {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+.container .content .companyCore section h2 {
+  color: #F4F0EC;
+  font-size: clamp(1.25rem, 2vw, 2rem);
+}
+.container .content .companyCore section details {
+  border: 5px solid #F4F0EC;
+  border-radius: 9px;
+  transition: background-color 0.3s ease-in;
+}
+.container .content .companyCore section details summary {
+  font-size: clamp(1.5rem, 2vw, 2.25rem);
+  color: #F4F0EC;
+  padding: 2rem;
+  transition: 0.3s ease-in;
+}
+.container .content .companyCore section details summary:hover {
+  background-color: #F4F0EC;
+  color: #010B13;
+}
+.container .content .companyCore section details[open] {
+  background-color: #F4F0EC;
+}
+.container .content .companyCore section details[open] summary {
+  color: #010B13;
+  border-bottom: 5px solid #010B13;
+  margin-bottom: 1rem;
+}
+.container .content .companyCore section details[open] p {
+  font-size: clamp(1rem, 2vw, 1.75rem);
+  padding: 1rem;
 }/*# sourceMappingURL=index.css.map */
