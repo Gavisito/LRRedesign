@@ -7,7 +7,7 @@
 :root {
   background-color: #f6f3f0;
   font-size: 12px;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-family: "Faustina", "lora", "mate-sc-static", "Merriweather-static";
   color: #010B13;
 }
 
@@ -95,14 +95,14 @@ body {
   border-radius: 30px 30px 0 0;
 }
 .container header .header-nav .header-buttons .loginbutton:hover {
-  background-color: #fde800;
-  border: 2px solid #07071e;
+  background-color: #1C2E43;
+  outline: 2px solid #05051f;
 }
 .container header .header-nav .header-buttons .loginbutton:hover .head {
-  background-color: #07071e;
+  background-color: #E9C5B8;
 }
 .container header .header-nav .header-buttons .loginbutton:hover .lbody {
-  background-color: #07071e;
+  background-color: #E9C5B8;
 }
 .container header .header-nav .menuIcon {
   display: none;
@@ -121,10 +121,10 @@ body {
   transition: 0.2s ease-in;
 }
 .container header .header-nav a:hover {
-  color: #FDEE00;
-  border-left: 10px solid #FDEE00;
+  color: #E9C5B8;
+  border-left: 10px solid #E9C5B8;
   padding: 2.5px 2rem;
-  background-color: #07071e;
+  background-color: #1C2E43;
 }
 .container header hr {
   width: 100%;
@@ -151,15 +151,15 @@ body {
   letter-spacing: 0.25rem;
 }
 .container header ul li a:hover {
-  color: #FDEE00 !important;
-  border-left: 10px solid #FDEE00 !important;
+  color: #E9C5B8 !important;
+  border-left: 10px solid #E9C5B8 !important;
   padding: 1rem 2rem;
-  background-color: #07071e;
+  background-color: #1C2E43;
 }
 .container header ul li a:focus {
-  color: #FDEE00 !important;
-  border-left: 10px solid #FDEE00 !important;
-  background-color: #07071e;
+  color: #E9C5B8 !important;
+  border-left: 10px solid #E9C5B8 !important;
+  background-color: #1C2E43;
 }
 .container header ul li a:visited {
   color: #0d0d38;
@@ -199,12 +199,12 @@ body {
   gap: 3.5rem;
 }
 .container .content .intro h1 {
-  font-size: clamp(3.5rem, 4vw, 7rem);
-  min-width: 80%;
+  font-size: clamp(2.75rem, 4vw, 7rem);
+  max-width: 80%;
   text-wrap: balance;
   text-align: center;
   margin: auto;
-  padding: 4rem 0;
+  padding: 2.5rem 0;
   letter-spacing: 0.35rem;
 }
 .container .content .intro .mainimg {
@@ -214,35 +214,35 @@ body {
 .container .content .intro .mainimg img {
   width: 95%;
   height: auto;
-  min-height: 35rem;
+  min-height: 30rem;
   border: 5px solid white;
   outline: 5px solid #010B13;
-  background-color: #07071e;
+  background-color: #9E919A;
 }
 .container .content .intro hr {
   width: 35%;
   height: 10px;
-  background-color: #07071e;
+  background-color: #BDA4A8;
 }
 .container .content .intro section {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  margin-top: 2.5rem;
+  margin-top: 2rem;
 }
 .container .content .intro section h2 {
-  font-size: clamp(2.75rem, 4vw, 5rem);
+  font-size: clamp(2.25rem, 4vw, 5rem);
   text-align: left;
   letter-spacing: 0.3rem;
 }
 .container .content .intro section p {
   display: flex;
   max-width: 100%;
-  font-size: clamp(1.5rem, 3vw, 2.75rem);
+  font-size: clamp(1.25rem, 3vw, 2.75rem);
   margin-left: 20vw;
   text-wrap: balance;
   padding-left: 2rem;
-  border-left: 10px solid #FDEE00;
+  border-left: 10px solid #4C4B5B;
   padding-bottom: 2rem;
   letter-spacing: 0.1rem;
 }
@@ -250,26 +250,26 @@ body {
   width: 100%;
   height: -moz-fit-content;
   height: fit-content;
-  background-color: #07071e;
-  padding: 5rem 4rem;
+  background-color: #1C2E43;
+  padding: 5rem 2.5rem;
   display: flex;
   flex-direction: column;
   gap: 2rem;
 }
 .container .content .companyCore h1 {
-  color: #FDEE00;
-  font-size: clamp(2.75rem, 4vw, 4rem);
+  color: #E9C5B8;
+  font-size: clamp(2.25rem, 4vw, 4rem);
 }
 .container .content .companyCore section {
-  width: 90%;
+  width: 100%;
   margin: auto;
   display: flex;
   flex-direction: column;
   gap: 1.75rem;
 }
 .container .content .companyCore section h2 {
-  color: #F4F0EC;
-  font-size: clamp(1.25rem, 2vw, 2rem);
+  color: #BDA4A8;
+  font-size: clamp(1.1rem, 2vw, 2rem);
 }
 .container .content .companyCore section details {
   border: 5px solid #F4F0EC;
@@ -279,7 +279,7 @@ body {
 .container .content .companyCore section details summary {
   font-size: clamp(1.5rem, 2vw, 2.25rem);
   color: #F4F0EC;
-  padding: 2rem;
+  padding: 1.5rem;
   transition: 0.3s ease-in;
 }
 .container .content .companyCore section details summary:hover {
