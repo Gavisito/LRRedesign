@@ -189,7 +189,7 @@ body {
   height: fit-content;
   display: flex;
   flex-direction: column;
-  gap: 8rem;
+  gap: 7.5lvw;
 }
 .container .content .intro {
   width: 95%;
@@ -307,7 +307,7 @@ body {
 }
 .container .content .gallery-nav h1 {
   text-align: center;
-  font-size: clamp(2rem, 4vw, 4rem);
+  font-size: clamp(2rem, 5vw, 5rem);
 }
 .container .content .gallery-nav .imgSection {
   display: flex;
@@ -320,7 +320,7 @@ body {
   width: 48%;
   margin: 1%;
   height: auto;
-  border-width: 15px 15px 50px 15px;
+  border-width: 1vw 1vw 3vw 1vw;
   border-color: whitesmoke;
   border-style: solid;
   outline: 1px solid grey;
@@ -329,4 +329,9 @@ body {
   background-color: #1C2E43;
   color: white;
   min-height: 30rem;
+  padding: 2rem 2.5rem;
+}
+.container footer section h1 {
+  text-align: start;
+  font-size: clamp(2rem, 5vw, 5rem);
 }/*# sourceMappingURL=index.css.map */
