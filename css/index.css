@@ -200,7 +200,7 @@ body {
   gap: 3.5rem;
 }
 .container .content .intro h1 {
-  font-size: clamp(2.75rem, 4vw, 7rem);
+  font-size: clamp(2rem, 4vw, 7rem);
   max-width: 80%;
   text-wrap: balance;
   text-align: center;
@@ -210,15 +210,23 @@ body {
 }
 .container .content .intro .mainimg {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
 }
 .container .content .intro .mainimg img {
+  margin: auto;
   width: 95%;
-  height: auto;
-  min-height: 30rem;
+  height: clamp(20rem, 50vw, 50rem);
+  background-size: cover;
   border: 5px solid white;
   outline: 5px solid #010B13;
   background-color: #9E919A;
+}
+.container .content .intro .mainimg figcaption {
+  text-decoration: none;
+  font-size: clamp(1rem, 2vw, 1.5rem);
+  text-align: end;
+  width: 98%;
+  margin-top: 1rem;
 }
 .container .content .intro hr {
   width: 35%;
@@ -328,10 +336,146 @@ body {
 .container footer {
   background-color: #1C2E43;
   color: white;
-  min-height: 30rem;
-  padding: 2rem 2.5rem;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 3vh;
 }
-.container footer section h1 {
-  text-align: start;
-  font-size: clamp(2rem, 5vw, 5rem);
+.container footer .business-info {
+  display: flex;
+  width: 100%;
+  padding: 0 3rem;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+.container footer .business-info .footer-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5vh;
+}
+.container footer .business-info .footer-contact h2 {
+  font-size: clamp(1.25rem, 2.5vw, 2.5rem);
+  text-decoration: underline;
+}
+.container footer .business-info .footer-contact ul {
+  list-style-position: inside;
+  list-style-type: square;
+  display: flex;
+  flex-direction: column;
+}
+.container footer .business-info .footer-contact ul li {
+  font-size: clamp(1rem, 1.75vw, 1.75rem);
+}
+.container footer hr {
+  width: 90%;
+  margin: auto;
+}
+.container footer .s-row {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 3rem;
+  flex-wrap: wrap-reverse;
+  gap: 25px;
+  padding-top: 1vh;
+}
+.container footer .s-row figure {
+  width: 45%;
+}
+.container footer .s-row figure iframe {
+  width: 100%;
+  height: clamp(22rem, 35vw, 35rem);
+  background-size: cover;
+  border: 5px solid rgb(255, 255, 255);
+  outline: 5px solid #cbcbcb;
+  background-color: #e1e0e1;
+}
+.container footer .s-row .operations {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+}
+.container footer .s-row .operations h2 {
+  font-size: clamp(1.5rem, 3vw, 3rem);
+  text-decoration: underline;
+}
+.container footer .s-row .operations .dayhours {
+  display: flex;
+  justify-content: space-between;
+}
+.container footer .s-row .operations .dayhours ul {
+  list-style: none;
+}
+.container footer .s-row .operations .dayhours ul li {
+  font-size: clamp(1.25rem, 2vw, 2rem);
+}
+@media (max-width: 700px) {
+  .container footer .s-row {
+    flex-direction: column;
+    gap: 8vh;
+  }
+  .container footer .s-row .operations {
+    width: 100%;
+  }
+  .container footer .s-row figure {
+    width: 100%;
+  }
+}
+.container footer span {
+  width: 100%;
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 1rem 0;
+}
+.container footer .footer-info {
+  display: flex;
+  flex-direction: column;
+  margin: 2.5rem 0;
+  flex-wrap: wrap;
+  padding: 0 3rem;
+  gap: 25px;
+}
+.container footer .footer-info nav {
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 100%;
+  padding-top: 2rem;
+}
+.container footer .footer-info nav ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.container footer .footer-info nav ul li {
+  list-style-type: none;
+}
+.container footer .footer-info nav ul li a {
+  color: #F4F0EC;
+  text-decoration: none;
+  border-top: 5px solid rgb(255, 255, 255);
+  transition: 0.2s ease-in;
+  padding: 0.5rem 1.5rem;
+  font-size: clamp(1rem, 2vw, 1.5rem);
+  letter-spacing: 0.25rem;
+}
+.container footer .footer-info nav ul li a:hover {
+  color: #E9C5B8 !important;
+  border-top: 10px solid #E9C5B8 !important;
+  padding: 0.5rem 2rem;
+  background-color: #1C2E43;
+}
+.container footer .footer-info nav ul li a:focus {
+  color: #E9C5B8 !important;
+  border-top: 10px solid #E9C5B8 !important;
+  background-color: #1C2E43;
+}
+.container footer .footer-info nav ul li a:visited {
+  color: #BDA4A8;
+  border-color: #BDA4A8;
+}
+.container footer .footer-info .branding h1 {
+  font-size: clamp(3rem, 6vw, 6rem);
+  text-decoration: underline;
 }/*# sourceMappingURL=index.css.map */
