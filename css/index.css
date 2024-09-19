@@ -394,11 +394,15 @@ body {
 .container footer .s-row .operations {
   display: flex;
   flex-direction: column;
-  width: 45%;
+  width: 50%;
+  border: 2px solid white;
+  padding: 1.5rem;
 }
 .container footer .s-row .operations h2 {
   font-size: clamp(1.5rem, 3vw, 3rem);
   text-decoration: underline;
+  margin-bottom: 2rem;
+  text-align: center;
 }
 .container footer .s-row .operations .dayhours {
   display: flex;
