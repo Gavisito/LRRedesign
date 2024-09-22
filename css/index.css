@@ -321,7 +321,7 @@ body {
   margin: 4rem 0;
 }
 .container .content .reviews h1 {
-  font-size: clamp(3rem, 5vw, 5rem);
+  font-size: clamp(3.5rem, 5vw, 5rem);
   text-align: center;
 }
 .container .content .reviews section {
@@ -330,7 +330,7 @@ body {
   gap: 1rem;
 }
 .container .content .reviews section h2 {
-  font-size: clamp(1rem, 1.75vw, 1.75rem);
+  font-size: clamp(1.2rem, 1.75vw, 1.75rem);
   text-align: center;
 }
 .container .content .reviews section .carousel {
@@ -347,13 +347,15 @@ body {
 }
 .container .content .reviews section .carousel .cItem {
   min-width: 30rem;
-  height: -moz-fit-content;
-  height: fit-content;
+  min-height: 350px;
   background-color: #1C2E43;
   border: 2px solid black;
   border-radius: 30px;
-  padding: 2.5rem 2rem 12rem 2.5rem;
+  padding: 2rem 2rem 5rem 2rem;
   outline: 5px solid #cbcbcb;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
 }
 .container .content .reviews section .carousel .cItem h3 {
   color: #d3aab0;
