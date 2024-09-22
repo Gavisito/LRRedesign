@@ -365,6 +365,7 @@ body{
         display: flex;
         width: 100%;
         height: fit-content;
+        background-color: #1C2E43;
         .heroImg{
             width: 45%;
             figure{
@@ -376,6 +377,10 @@ body{
             }
             figcaption{
                 font-size: clamp(1rem, 2vw, 1.5rem);
+                color: whitesmoke;
+                a{
+                    color: #E9C5B8;
+                }
             }
         }
         .heroText{
@@ -390,11 +395,13 @@ body{
 
             h1{
                 font-size: clamp(3rem, 7vw, 7rem);
+                color: #E9C5B8;
 
             }
             h2{
                 font-size: clamp(1.5rem, 2.5vw, 2.5rem);
                 width: 70%;
+                color: whitesmoke;
             }
         }
     }
@@ -402,6 +409,7 @@ body{
     @media screen and (max-width:1025px) {
         .reservationIntro{
             flex-direction:column-reverse;
+            background-color: transparent;
             .heroImg{
                 width: 100%;
                 figure{
@@ -412,6 +420,10 @@ body{
                     }
                     figcaption{
                         text-align: end;
+                        color: black;
+                        a{
+                            color:#0d0d38
+                        }
                     }
                 }
 
@@ -421,8 +433,12 @@ body{
                 margin: auto;
                 padding: 3rem 0;
                 text-wrap: pretty;
+                h1{
+                    color: black;
+                }
                 h2{
                     width: 100%;
+                    color: black;
                 }
             }
         }

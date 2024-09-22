@@ -346,6 +346,7 @@ body {
   width: 100%;
   height: -moz-fit-content;
   height: fit-content;
+  background-color: #1C2E43;
 }
 .container .reservationIntro .heroImg {
   width: 45%;
@@ -359,6 +360,10 @@ body {
 }
 .container .reservationIntro .heroImg figcaption {
   font-size: clamp(1rem, 2vw, 1.5rem);
+  color: whitesmoke;
+}
+.container .reservationIntro .heroImg figcaption a {
+  color: #E9C5B8;
 }
 .container .reservationIntro .heroText {
   width: 55%;
@@ -372,14 +377,17 @@ body {
 }
 .container .reservationIntro .heroText h1 {
   font-size: clamp(3rem, 7vw, 7rem);
+  color: #E9C5B8;
 }
 .container .reservationIntro .heroText h2 {
   font-size: clamp(1.5rem, 2.5vw, 2.5rem);
   width: 70%;
+  color: whitesmoke;
 }
 @media screen and (max-width: 1025px) {
   .container .reservationIntro {
     flex-direction: column-reverse;
+    background-color: transparent;
   }
   .container .reservationIntro .heroImg {
     width: 100%;
@@ -390,6 +398,10 @@ body {
   }
   .container .reservationIntro .heroImg figure figcaption {
     text-align: end;
+    color: black;
+  }
+  .container .reservationIntro .heroImg figure figcaption a {
+    color: #0d0d38;
   }
   .container .reservationIntro .heroText {
     width: 85%;
@@ -397,8 +409,12 @@ body {
     padding: 3rem 0;
     text-wrap: pretty;
   }
+  .container .reservationIntro .heroText h1 {
+    color: black;
+  }
   .container .reservationIntro .heroText h2 {
     width: 100%;
+    color: black;
   }
 }
 .container form {
