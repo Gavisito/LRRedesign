@@ -332,13 +332,14 @@ body{
             .imgSection{
                 display: flex;
                 margin: auto;
-                width: 80%;
+                width: 90%;
                 flex-wrap: wrap;
                 padding: 2.5% 0;
                 img{
                     width: 48%;
                     margin: 1%;
-                    height: auto;
+                    height: clamp(15rem, 45vw, 45rem);
+                    background-size: contain;
                     border-width: 1vw 1vw 3vw 1vw;
                     border-color: whitesmoke;
                     border-style: solid;
@@ -352,14 +353,14 @@ body{
         display: flex;
         width: 100%;
         height: fit-content;
+        border-bottom: 5px solid black;
         .heroImg{
             width: 45%;
-            margin-bottom: 4rem;
             figure{
                 width: 100%;
                 img{
                     width: 100%;
-                    height: clamp(30rem, 50vw, 50rem);
+                    height: clamp(30rem, 70vw, 70rem);
                 }
             }
             figcaption{
@@ -382,14 +383,17 @@ body{
             }
             h2{
                 font-size: clamp(1.5rem, 2.5vw, 2.5rem);
+                width: 70%;
             }
             p{
                 font-size: clamp(1rem, 1.5vw, 1.3rem);
+                width: 70%;
+                padding-bottom: 3rem;
             }
         }
     }
 
-    @media screen and (max-width:1000px) {
+    @media screen and (max-width:1025px) {
         .reservationIntro{
             flex-direction:column;
             .heroImg{
@@ -397,15 +401,23 @@ body{
                 figure{
                     img{
                         width: 100%;
-                        height: clamp(30rem, 50vh, 50rem);
+                        height: clamp(30rem, 80vw, 80rem);
                         
                     }
                 }
 
             }
             .heroText{
-                width: 100%;
+                width: 85%;
+                margin: auto;
+                padding: 3rem 0;
                 text-wrap: pretty;
+                h2{
+                    width: 100%;
+                }
+                p{
+                    width: 100%;
+                }
             }
         }
         
@@ -426,7 +438,7 @@ body{
             fieldset{
                 border: none;
                 legend{
-                    font-size: clamp(1.5rem, 2vw, 5rem);
+                    font-size: clamp(1.5rem, 2vw, 2rem);
                     text-decoration: underline;
                     margin: 1.5vh 0;
                 }
@@ -545,18 +557,18 @@ body{
         display: flex;
         flex-direction: column;
         width: 100%;
-        gap: 3vh;
+        gap: 2rem;
 
         .business-info{
             display: flex;
             width: 100%;
             padding: 0 3rem;
             flex-wrap: wrap;
-            gap: 25px;
+            gap: 2rem;
             .footer-contact{
                 display: flex;
                 flex-direction: column;
-                gap: 0.5vh;
+                gap: 1rem;
                 h2{
                     font-size: clamp(1.25rem, 2.5vw, 2.5rem);
                     text-decoration: underline;
@@ -585,8 +597,7 @@ body{
             justify-content: space-between;
             margin: 0 3rem;
             flex-wrap: wrap-reverse;
-            gap: 25px;
-            padding-top: 1vh;
+            padding-top: 1rem;
 
             figure{
                 width: 45%;
@@ -603,12 +614,11 @@ body{
                 display: flex;
                 flex-direction:column;
                 width: 50%;
-                padding: 1.5rem;
 
                 h2{
                     font-size: clamp(1.5rem, 3vw, 3rem);
                     text-decoration: underline;
-                    margin-bottom: 2rem;
+                    margin-bottom: 1rem;
                 }
 
                 .dayhours{
@@ -641,17 +651,17 @@ body{
         span{
             width: 100%;
             text-align: center;
-            font-size: 1.5rem;
-            padding: 1rem 0;
+            font-size: 1rem;
+            padding-top: -2rem;
+            padding-bottom: 2rem;
         }
 
         .footer-info{
             display: flex;
             flex-direction: column;
-            margin: 2.5rem 0;
+            margin-top: 2.5rem;
             flex-wrap: wrap;
             padding: 0 3rem;
-            gap: 25px;
             nav{
                 height: fit-content;
                 width: 100%;
