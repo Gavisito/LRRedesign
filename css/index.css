@@ -5,19 +5,19 @@
 }
 
 :root {
-  background-color: #f6f3f0;
+  background-color: #ffffff;
   font-size: 12px;
   font-family: "Faustina", "lora", "mate-sc-static", "Merriweather-static";
   color: #010B13;
 }
 
 ::-moz-selection {
-  background-color: #E9C5B8;
+  background-color: #5799d7;
   color: #010B13;
 }
 
 ::selection {
-  background-color: #E9C5B8;
+  background-color: #5799d7;
   color: #010B13;
 }
 
@@ -33,7 +33,6 @@ body {
   height: fit-content;
   display: flex;
   flex-direction: column;
-  gap: 25px;
 }
 .container header {
   width: 100%;
@@ -44,7 +43,7 @@ body {
   gap: 5px;
   font-size: clamp(1.25rem, 2vw, 1.5rem);
   box-shadow: 1px 1px 8px #010B13;
-  background-color: #F4F0EC;
+  background-color: #ffffff;
   position: sticky;
   top: 0;
 }
@@ -189,7 +188,6 @@ body {
   height: fit-content;
   display: flex;
   flex-direction: column;
-  gap: 7.5lvw;
 }
 .container .content .intro {
   width: 95%;
@@ -238,6 +236,7 @@ body {
   flex-direction: column;
   gap: 1rem;
   margin-top: 2rem;
+  margin-bottom: 10rem;
 }
 .container .content .intro section h2 {
   font-size: clamp(2.25rem, 4vw, 5rem);
@@ -264,6 +263,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 3rem;
+  margin-bottom: 6rem;
 }
 .container .content .companyCore h1 {
   color: #E9C5B8;
@@ -332,6 +332,172 @@ body {
   border-color: whitesmoke;
   border-style: solid;
   outline: 1px solid grey;
+}
+.container .reservationIntro {
+  display: flex;
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.container .reservationIntro .heroImg {
+  width: 45%;
+  margin-bottom: 4rem;
+}
+.container .reservationIntro .heroImg figure {
+  width: 100%;
+}
+.container .reservationIntro .heroImg figure img {
+  width: 100%;
+  height: clamp(30rem, 50vw, 50rem);
+}
+.container .reservationIntro .heroImg figcaption {
+  font-size: clamp(1rem, 2vw, 1.5rem);
+}
+.container .reservationIntro .heroText {
+  width: 55%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 0 2rem;
+  gap: 0.76rem;
+}
+.container .reservationIntro .heroText h1 {
+  font-size: clamp(3rem, 7vw, 7rem);
+}
+.container .reservationIntro .heroText h2 {
+  font-size: clamp(1.5rem, 2.5vw, 2.5rem);
+}
+.container .reservationIntro .heroText p {
+  font-size: clamp(1rem, 1.5vw, 1.3rem);
+}
+@media screen and (max-width: 1000px) {
+  .container .reservationIntro {
+    flex-direction: column;
+  }
+  .container .reservationIntro .heroImg {
+    width: 100%;
+  }
+  .container .reservationIntro .heroImg figure img {
+    width: 100%;
+    height: clamp(30rem, 50vh, 50rem);
+  }
+  .container .reservationIntro .heroText {
+    width: 100%;
+    text-wrap: pretty;
+  }
+}
+.container form {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  height: -moz-fit-content;
+  height: fit-content;
+  gap: 2vh;
+  margin: 5rem auto;
+}
+.container form h1 {
+  font-size: clamp(2.25rem, 3vw, 3rem);
+}
+.container form fieldset {
+  border: none;
+}
+.container form fieldset legend {
+  font-size: clamp(1.5rem, 2vw, 5rem);
+  text-decoration: underline;
+  margin: 1.5vh 0;
+}
+.container form fieldset label {
+  font-size: clamp(1.5rem, 2vw, 1.75rem);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.container form fieldset label input {
+  border-width: 0px 0px 5px 0px;
+  border-color: #010B13;
+  padding: 1.5rem;
+  background-color: #f8f4f4;
+}
+.container form fieldset label textarea {
+  border: 3px solid #1C2E43;
+  padding: 1rem;
+  text-wrap: balance;
+  font-size: clamp(1.25rem, 1.5vw, 1.7rem);
+}
+.container form fieldset label input:hover, .container form fieldset label textarea:hover {
+  border: 4px solid rgb(106, 0, 255);
+}
+.container form fieldset label input:focus, .container form fieldset label textarea:focus {
+  border: 4px solid rgb(106, 0, 255);
+}
+.container form .personInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.container form .personInfo label #reservationName {
+  width: 100%;
+}
+.container form .personInfo fieldset {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.container form .personInfo fieldset label {
+  width: 49%;
+  gap: 1rem;
+}
+.container form .personInfo fieldset label #emailAddress, .container form .personInfo fieldset label #phoneNumber {
+  width: 100%;
+}
+@media screen and (max-width: 500px) {
+  .container form .personInfo fieldset {
+    flex-direction: column;
+  }
+  .container form .personInfo fieldset label {
+    width: 100%;
+  }
+}
+.container form .reservationInfo {
+  display: flex;
+  justify-content: space-between;
+}
+.container form .reservationInfo label {
+  width: 30%;
+}
+@media screen and (max-width: 600px) {
+  .container form .reservationInfo {
+    flex-direction: column;
+  }
+  .container form .reservationInfo label {
+    width: 100%;
+  }
+}
+.container form .formButtons {
+  display: flex;
+  width: 100%;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+.container form .formButtons input {
+  width: 47%;
+  padding: 1rem;
+}
+.container form .formButtons input:hover {
+  border: 4px solid black;
+  background-color: white;
+  color: black;
+}
+.container form .formButtons #submitBtn {
+  background-color: #1C2E43;
+  color: white;
+}
+.container form .formButtons #submitBtn:hover {
+  border: 4px solid black;
+  background-color: white;
+  color: black;
 }
 .container footer {
   background-color: #1C2E43;
@@ -477,7 +643,7 @@ body {
   color: #BDA4A8;
   border-color: #BDA4A8;
 }
-.container footer .footer-info .branding h1 {
+.container footer .footer-info .branding h2 {
   font-size: clamp(3rem, 6vw, 6rem);
   text-decoration: underline;
 }/*# sourceMappingURL=index.css.map */
