@@ -274,7 +274,7 @@ body{
             display: flex;
             flex-direction: column;
             gap: 3rem;
-            margin-bottom: 6rem;
+            margin-bottom: 2rem;
             h1{
                 color: #E9C5B8;
                 font-size: clamp(2.25rem, 4vw, 4rem);
@@ -331,6 +331,56 @@ body{
         }
 
 
+        .reviews{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            margin: 4rem 0;
+            h1{
+                font-size: clamp(3rem, 5vw, 5rem);
+                text-align: center;
+            }
+            section{
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+                h2{
+                    font-size: clamp(1rem, 1.75vw, 1.75rem);
+                    text-align: center;
+                }
+                .carousel{
+                    width: 90%;
+                    height: fit-content;
+                    margin: auto;
+                    display: flex;
+                    overflow-x: auto;
+                    overflow-y: hidden;
+                    flex-direction: row;
+                    gap: 15px;
+                    padding: 2rem;
+                    .cItem {
+                        min-width: 30rem;
+                        height: fit-content;
+                        background-color: #1C2E43;
+                        border: 2px solid black;
+                        border-radius: 30px;
+                        padding: 2.5rem 2rem 12rem 2.5rem;
+                        outline: 5px solid #cbcbcb;
+
+                        h3{
+                            color: #d3aab0;
+                            font-size: clamp(2.5rem, 3vw, 3rem);
+                            text-decoration: underline;
+                        }
+                        p{
+                            color: whitesmoke;
+                            font-size: clamp(1.5rem, 1.75vw, 1.75rem);
+                            text-wrap: balance;
+                        }
+                    }
+                }
+            }
+        }
 
         .gallery-nav{
             width: 100%;
