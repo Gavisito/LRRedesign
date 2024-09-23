@@ -12,12 +12,12 @@
 }
 
 ::-moz-selection {
-  background-color: #5799d7;
+  background-color: #ef778b;
   color: #010B13;
 }
 
 ::selection {
-  background-color: #5799d7;
+  background-color: #ef778b;
   color: #010B13;
 }
 
@@ -215,8 +215,8 @@ body {
   width: 100%;
   height: clamp(20rem, 50vw, 50rem);
   background-size: cover;
-  border: 5px solid white;
-  outline: 5px solid #010B13;
+  border: 3px solid white;
+  outline: 5px solid #242525;
   background-color: #9E919A;
 }
 .container .content .intro .mainimg figcaption {
@@ -239,14 +239,14 @@ body {
   margin-bottom: 10rem;
 }
 .container .content .intro section h2 {
-  font-size: clamp(2.25rem, 4vw, 5rem);
+  font-size: clamp(2.5rem, 4.25vw, 4.25rem);
   text-align: left;
   letter-spacing: 0.3rem;
 }
 .container .content .intro section p {
   display: flex;
   max-width: 100%;
-  font-size: clamp(1.25rem, 3vw, 2.75rem);
+  font-size: clamp(1.25rem, 2.25vw, 2.25rem);
   margin-left: 15vw;
   padding-left: 2rem;
   border-left: 10px solid #4C4B5B;
@@ -265,7 +265,7 @@ body {
   margin-bottom: 2rem;
 }
 .container .content .companyCore h1 {
-  color: #E9C5B8;
+  color: #dca0aa;
   font-size: clamp(2.25rem, 4vw, 4rem);
 }
 .container .content .companyCore section {
@@ -276,7 +276,7 @@ body {
   gap: 3rem;
 }
 .container .content .companyCore section h2 {
-  color: #BDA4A8;
+  color: #ffd6dd;
   font-size: clamp(1.1rem, 2vw, 2rem);
 }
 .container .content .companyCore section details {
@@ -349,10 +349,10 @@ body {
   min-width: 30rem;
   min-height: 350px;
   background-color: #1C2E43;
-  border: 2px solid black;
+  border: 3px solid white;
+  outline: 5px solid #242525;
   border-radius: 30px;
   padding: 2rem 2rem 5rem 2rem;
-  outline: 5px solid #cbcbcb;
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
@@ -366,6 +366,74 @@ body {
   color: whitesmoke;
   font-size: clamp(1.5rem, 1.75vw, 1.75rem);
   text-wrap: balance;
+}
+.container .content .redirect {
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: 1rem 0 4rem 0;
+}
+.container .content .redirect h1 {
+  font-size: clamp(2.75rem, 4vw, 4rem);
+  text-align: center;
+  padding: 3rem 0;
+  text-wrap: balance;
+}
+.container .content .redirect .cardContainer {
+  width: 90%;
+  margin: 0 auto;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: flex;
+  justify-content: space-between;
+}
+.container .content .redirect .cardContainer section {
+  width: 49%;
+  min-height: 30rem;
+  background-color: #1C2E43;
+  border: 3px solid white;
+  outline: 5px solid #242525;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 2.6rem;
+}
+.container .content .redirect .cardContainer section h2 {
+  font-size: clamp(2.25rem, 4vw, 4rem);
+  text-align: center;
+  color: #dca0aa;
+  text-wrap: balance;
+}
+.container .content .redirect .cardContainer section p {
+  font-size: clamp(1.2rem, 1.75vw, 1.75rem);
+  width: 95%;
+  text-align: center;
+  color: rgba(245, 245, 245, 0.847);
+  text-wrap: balance;
+}
+.container .content .redirect .cardContainer section button {
+  padding: 1.25rem 3rem;
+  font-size: clamp(1rem, 1.5vw, 1.5rem);
+  color: black;
+  background-color: whitesmoke;
+}
+.container .content .redirect .cardContainer section button:hover {
+  background-color: #1C2E43;
+  border: 5px solid white;
+  color: white;
+  cursor: pointer;
+}
+@media screen and (max-width: 800px) {
+  .container .content .redirect .cardContainer {
+    flex-direction: column;
+    gap: 4rem;
+  }
+  .container .content .redirect .cardContainer section {
+    width: 90%;
+    margin: auto;
+  }
 }
 .container .content .gallery-nav {
   width: 100%;
@@ -430,7 +498,7 @@ body {
 }
 .container .reservationIntro .heroText h1 {
   font-size: clamp(3rem, 7vw, 7rem);
-  color: #E9C5B8;
+  color: #dca0aa;
 }
 .container .reservationIntro .heroText h2 {
   font-size: clamp(1.5rem, 2.5vw, 2.5rem);
@@ -509,13 +577,13 @@ body {
   font-size: clamp(1.25rem, 1.5vw, 1.7rem);
 }
 .container form fieldset label input:hover, .container form fieldset label textarea:hover {
-  border-bottom: 4px solid rgb(106, 0, 255);
+  border-bottom: 4px solid #ef778b;
 }
 .container form fieldset label input:focus {
-  border-bottom: 4px solid rgb(106, 0, 255);
+  border-bottom: 4px solid #ef778b;
 }
 .container form fieldset label textarea:hover, .container form fieldset label textarea:focus {
-  border: 4px solid rgb(106, 0, 255);
+  border: 4px solid #ef778b;
 }
 .container form .personInfo {
   display: flex;

@@ -13,7 +13,7 @@
 }
 
 ::selection{
-    background-color: #5799d7;
+    background-color: #ef778b;
     color: #010B13;
 }
 
@@ -222,8 +222,8 @@ body{
                     width: 100%;
                     height: clamp(20rem, 50vw, 50rem);
                     background-size: cover;
-                    border: 5px solid white;
-                    outline: 5px solid #010B13;
+                    border:3px solid white;
+                    outline: 5px solid #242525;
                     background-color: #9E919A;
                 }
                 figcaption{
@@ -248,14 +248,14 @@ body{
                 margin-top: 2rem ;
                 margin-bottom: 10rem;
                 h2{
-                    font-size: clamp(2.25rem, 4vw, 5rem);
+                    font-size: clamp(2.5rem, 4.25vw, 4.25rem);
                     text-align: left;
                     letter-spacing: 0.3rem;
                 }
                 p{
                     display: flex;
                     max-width: 100%;
-                    font-size: clamp(1.25rem, 3vw, 2.75rem);
+                    font-size: clamp(1.25rem, 2.25vw, 2.25rem);
                     margin-left: 15vw;
 
                     padding-left: 2rem;
@@ -276,7 +276,7 @@ body{
             gap: 3rem;
             margin-bottom: 2rem;
             h1{
-                color: #E9C5B8;
+                color: #dca0aa;
                 font-size: clamp(2.25rem, 4vw, 4rem);
             }
             section{
@@ -286,7 +286,7 @@ body{
                 flex-direction: column;
                 gap: 3rem;
                 h2{
-                    color: #BDA4A8;
+                    color: #ffd6dd;
                     font-size: clamp(1.1rem, 2vw, 2rem);
                 }
                 details{
@@ -362,10 +362,10 @@ body{
                         min-width: 30rem;
                         min-height: 350px;
                         background-color: #1C2E43;
-                        border: 2px solid black;
+                        border:3px solid white;
+                        outline: 5px solid #242525;
                         border-radius: 30px;
                         padding: 2rem 2rem 5rem 2rem;
-                        outline: 5px solid #cbcbcb;
                         display: flex;
                         flex-direction: column;
                         gap: .75rem;
@@ -384,6 +384,74 @@ body{
                 }
             }
         }
+
+        .redirect{
+            width: 100%;
+            height: fit-content;
+            margin: 1rem 0 4rem 0;
+            h1{
+                font-size: clamp(2.75rem, 4vw, 4rem);
+                text-align: center;
+                padding: 3rem 0;
+                text-wrap: balance;
+            }
+            .cardContainer{
+                width: 90%;
+                margin: 0 auto;
+                height: fit-content;
+                display: flex;
+                justify-content: space-between;
+                section{
+                    width: 49%;
+                    min-height: 30rem;
+                    background-color: #1C2E43;
+                    border:3px solid white;
+                    outline: 5px solid #242525;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 2rem;
+                    padding: 2.6rem;
+                    h2{
+                        font-size: clamp(2.25rem, 4vw, 4rem);
+                        text-align: center;
+                        color: #dca0aa;
+                        text-wrap: balance;
+                    }
+                    p{
+                        font-size: clamp(1.2rem, 1.75vw, 1.75rem);
+                        width: 95%;
+                        text-align: center;
+                        color: rgba(245, 245, 245, 0.847);
+                        text-wrap: balance;
+                    }
+                    button{
+                        padding: 1.25rem 3rem;
+                        font-size: clamp(1rem, 1.5vw, 1.5rem);
+                        color: black;
+                        background-color: whitesmoke;
+                    }
+                    button:hover{
+                        background-color: #1C2E43;
+                        border: 5px solid white;
+                        color: white;
+                        cursor: pointer;
+                    }
+                }
+            }
+            @media screen and (max-width: 800px){
+                .cardContainer{
+                    flex-direction: column;
+                    gap: 4rem;
+                    section{
+                        width: 90%;
+                        margin: auto;
+                    }
+                }
+            }
+        }
+
 
         .gallery-nav{
             width: 100%;
@@ -448,7 +516,7 @@ body{
 
             h1{
                 font-size: clamp(3rem, 7vw, 7rem);
-                color: #E9C5B8;
+                color: #dca0aa;
 
             }
             h2{
@@ -536,14 +604,14 @@ body{
                     }
 
                     input:hover, textarea:hover{
-                        border-bottom: 4px solid rgb(106, 0, 255);
+                        border-bottom: 4px solid #ef778b;
                     }
 
                     input:focus{
-                        border-bottom: 4px solid rgb(106, 0, 255);
+                        border-bottom: 4px solid #ef778b;
                     }
                     textarea:hover, textarea:focus{
-                        border: 4px solid rgb(106, 0, 255);
+                        border: 4px solid #ef778b;
                     }
                 }
             }
