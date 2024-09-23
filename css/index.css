@@ -589,7 +589,7 @@ body {
   border-bottom: 4px solid #ef778b;
 }
 .container form fieldset label textarea:hover, .container form fieldset label textarea:focus {
-  border-bottom: 4px solid #ef778b;
+  border: 4px solid #ef778b;
 }
 .container form .personInfo {
   display: flex;
