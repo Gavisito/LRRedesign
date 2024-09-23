@@ -209,9 +209,10 @@ body{
                 max-width: 80%;
                 text-wrap: balance;
                 text-align: center;
-                margin: auto;
+                margin: 0 auto;
                 padding: 2.5rem 0;
                 letter-spacing: 0.35rem;
+
             }
 
             .mainimg{
@@ -389,6 +390,11 @@ body{
             width: 100%;
             height: fit-content;
             margin: 1rem 0 4rem 0;
+            hr{
+                width: 80%;
+                margin: auto;
+                border: 2px solid black;
+            }
             h1{
                 font-size: clamp(2.75rem, 4vw, 4rem);
                 text-align: center;
@@ -426,11 +432,13 @@ body{
                         color: rgba(245, 245, 245, 0.847);
                         text-wrap: balance;
                     }
-                    button{
-                        padding: 1.25rem 3rem;
-                        font-size: clamp(1rem, 1.5vw, 1.5rem);
-                        color: black;
-                        background-color: whitesmoke;
+                    a{
+                        button{
+                            padding: 1.25rem 3rem;
+                            font-size: clamp(1rem, 1.5vw, 1.5rem);
+                            color: black;
+                            background-color: whitesmoke;
+                        }
                     }
                     button:hover{
                         background-color: #1C2E43;
@@ -515,14 +523,15 @@ body{
             gap: .76rem;
 
             h1{
-                font-size: clamp(3rem, 7vw, 7rem);
+                font-size: clamp(3.5rem, 7vw, 7rem);
                 color: #dca0aa;
 
             }
             h2{
-                font-size: clamp(1.5rem, 2.5vw, 2.5rem);
-                width: 70%;
+                font-size: clamp(1.6rem, 3vw, 3rem);
+                width: 50%;
                 color: whitesmoke;
+                text-wrap: balance;
             }
         }
     }
@@ -552,7 +561,7 @@ body{
             .heroText{
                 width: 85%;
                 margin: auto;
-                padding: 3rem 0;
+                padding: 5rem 0;
                 text-wrap: pretty;
                 h1{
                     color: black;
