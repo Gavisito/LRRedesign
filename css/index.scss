@@ -433,14 +433,13 @@ body{
                         text-wrap: balance;
                     }
                     a{
-                        button{
-                            padding: 1.25rem 3rem;
-                            font-size: clamp(1rem, 1.5vw, 1.5rem);
-                            color: black;
-                            background-color: whitesmoke;
-                        }
+                        padding: 1.25rem 3rem;
+                        font-size: clamp(1rem, 1.5vw, 1.5rem);
+                        color: black;
+                        background-color: whitesmoke;
+                        text-decoration: none;
                     }
-                    button:hover{
+                    a:hover{
                         background-color: #1C2E43;
                         border: 5px solid white;
                         color: white;

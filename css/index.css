@@ -418,13 +418,14 @@ body {
   color: rgba(245, 245, 245, 0.847);
   text-wrap: balance;
 }
-.container .content .redirect .cardContainer section a button {
+.container .content .redirect .cardContainer section a {
   padding: 1.25rem 3rem;
   font-size: clamp(1rem, 1.5vw, 1.5rem);
   color: black;
   background-color: whitesmoke;
+  text-decoration: none;
 }
-.container .content .redirect .cardContainer section button:hover {
+.container .content .redirect .cardContainer section a:hover {
   background-color: #1C2E43;
   border: 5px solid white;
   color: white;
