@@ -453,7 +453,7 @@ body {
   justify-content: center;
   background-color: #1C2E43;
   border-bottom: 2px solid white;
-  color: #dca0aa;
+  color: #ffffff;
   margin-bottom: 7rem;
   padding: clamp(2.5rem, 8vw, 8rem) 0;
 }
@@ -514,6 +514,52 @@ body {
   overflow-y: hidden;
   overflow-x: auto;
   gap: 15px;
+}
+.container .content .externalRecipies {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 5rem 0 auto;
+  padding: 5rem 0;
+  background: url(/images/menuBGL.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.container .content .externalRecipies h1 {
+  font-size: clamp(2.5rem, 3.5vw, 3.5rem);
+  text-wrap: balance;
+  padding-bottom: 2rem;
+  width: 95%;
+  background-color: rgba(203, 203, 203, 0.5647058824);
+  margin: auto;
+  text-align: center;
+  padding-top: 5rem;
+}
+.container .content .externalRecipies .linkCard {
+  width: 95%;
+  background-color: rgba(203, 203, 203, 0.5647058824);
+  margin: auto;
+  padding-left: 5rem;
+  border-radius: 25px;
+}
+.container .content .externalRecipies .linkCard section {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+.container .content .externalRecipies .linkCard section h2 {
+  font-size: clamp(1.5rem, 2.5vw, 2.5rem);
+}
+.container .content .externalRecipies .linkCard section ul {
+  list-style: square inside;
+  padding-bottom: 1rem;
+}
+.container .content .externalRecipies .linkCard section ul li {
+  padding-left: 2rem;
+  font-size: clamp(1rem, 2vw, 2rem);
+}
+.container .content .externalRecipies .linkCard section ul li a {
+  text-decoration: underline;
+  color: #8f4b56;
 }
 @media screen and (max-width: 1025px) {
   .container .content .menuHeader {
