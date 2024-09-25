@@ -464,15 +464,23 @@ body{
 
         .menuHeader{
             text-align: center;
-            padding: 5rem 0;
+            padding: 3rem 0;
             font-size: clamp(2.5rem, 5vw, 5rem);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #1C2E43;
+            border-bottom: 2px solid white;
+            color: #dca0aa;
+            margin-bottom: 7rem;
+            padding: clamp(2.5rem, 8vw, 8rem) 0;
         }
         .menu{
             display: flex;
             width: 100%;
             height: fit-content;
             margin: auto;
-            padding: 2.5rem 0;
+            padding-bottom: 4rem;
             .sidebar{
                 display: flex;
                 flex-direction: column;
@@ -504,7 +512,7 @@ body{
                 height: fit-content;
                 display: flex;
                 flex-direction: column;
-                gap: 25px;
+                gap: 30px;
                 section{
                     display: flex;
                     flex-direction: column;
@@ -523,8 +531,12 @@ body{
         }
 
         @media screen and (max-width:1025px) {
+            .menuHeader{
+                margin-bottom: 0rem;
+            }
             .menu{
                 flex-direction: column;
+                gap: 25px;
                 .sidebar{
                     flex-direction: row;
                     width: 100%;
