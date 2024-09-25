@@ -484,31 +484,36 @@ body{
             .sidebar{
                 display: flex;
                 flex-direction: column;
-                width: 19%;
+                width: 24%;
                 height: fit-content;
                 text-wrap: balance;
-                padding: 0 2rem;
                 position: sticky;
                 top:200px;
+                padding-left: 1.5rem;
                 nav{
                     ul{
                         display: flex;
                         flex-direction: column;
                         list-style: none;
                         justify-content: space-between;
-                        gap: 15px;
+                        gap: 6rem;
                         li{
                             a{
                                 text-decoration: none;
                                 color: #1C2E43;
-                                font-size: clamp(1.25rem, 3vh, 3rem);
+                                font-size: clamp(1.25rem, 3.5vh, 3.5rem);
+                                font-weight: bolder;
+                                width: 100%;
+                                border-bottom: 5px solid #1C2E43;
+                                text-wrap: nowrap;
+                                padding-right: 1.5rem;
                             }
                         }
                     }
                 }
             }
             .menuOptions{
-                width: 79%;
+                width: 74%;
                 height: fit-content;
                 display: flex;
                 flex-direction: column;
@@ -541,7 +546,7 @@ body{
                     flex-direction: row;
                     width: 100%;
                     position: sticky;
-                    top: 6.7rem;
+                    top: 130px;
                     background-color: #1C2E43;
                     nav{
                         width: 100%;
@@ -567,6 +572,44 @@ body{
                 .menuOptions{
                     width: 90%;
                     margin: auto;
+                }
+            }
+        }
+        @media screen and (max-width: 1000px){
+            .menu{
+                .sidebar{
+                    top:85px;
+                }
+            }
+        }
+
+        @media screen and (max-width: 900px){
+            .menu{
+                .sidebar{
+                    top:85px;
+                }
+            }
+        }
+        @media screen and (max-width: 800px){
+            .menu{
+                .sidebar{
+                    top:85px;
+                }
+            }
+        }
+
+        @media screen and (max-width: 700px){
+            .menu{
+                .sidebar{
+                    top:80px;
+                }
+            }
+        }
+
+        @media screen and (max-width: 340px){
+            .menu{
+                .sidebar{
+                    top:100px;
                 }
             }
         }
