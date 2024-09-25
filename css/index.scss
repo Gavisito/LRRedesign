@@ -9,6 +9,7 @@
     font-size: 12px;
     font-family:'Faustina', 'lora', 'mate-sc-static', 'Merriweather-static';
     color: #010B13;
+    scroll-behavior: smooth;
     
 }
 
@@ -40,6 +41,7 @@ body{
         background-color: #ffffff;
         position: sticky;
         top: 0;
+        z-index: 999;
 
         .header-nav{
             font-size: clamp(2rem, 4vw, 3rem);
@@ -49,6 +51,7 @@ body{
             display: flex;
             align-items: center;
             justify-content: space-between;
+            background-color: #ffffff;
             .header-buttons{
                 gap: 20px;
                 justify-content: center;
@@ -455,6 +458,103 @@ body{
                         width: 90%;
                         margin: auto;
                     }
+                }
+            }
+        }
+
+        .menuHeader{
+            text-align: center;
+            padding: 5rem 0;
+            font-size: clamp(2.5rem, 5vw, 5rem);
+        }
+        .menu{
+            display: flex;
+            width: 100%;
+            height: fit-content;
+            margin: auto;
+            padding: 2.5rem 0;
+            .sidebar{
+                display: flex;
+                flex-direction: column;
+                width: 19%;
+                height: fit-content;
+                text-wrap: balance;
+                padding: 0 2rem;
+                position: sticky;
+                top:200px;
+                nav{
+                    ul{
+                        display: flex;
+                        flex-direction: column;
+                        list-style: none;
+                        justify-content: space-between;
+                        gap: 15px;
+                        li{
+                            a{
+                                text-decoration: none;
+                                color: #1C2E43;
+                                font-size: clamp(1.25rem, 3vh, 3rem);
+                            }
+                        }
+                    }
+                }
+            }
+            .menuOptions{
+                width: 79%;
+                height: fit-content;
+                display: flex;
+                flex-direction: column;
+                gap: 25px;
+                section{
+                    display: flex;
+                    flex-direction: column;
+                    h2{
+                        font-size: clamp(1.25rem, 2.5vw, 2.5rem);
+                        scroll-margin-top: 170px;
+                    }
+                    .menuSlider{
+                        display: flex;
+                        overflow-y: hidden;
+                        overflow-x: auto;
+                        gap: 15px;
+                    }
+                }
+            }
+        }
+
+        @media screen and (max-width:1025px) {
+            .menu{
+                flex-direction: column;
+                .sidebar{
+                    flex-direction: row;
+                    width: 100%;
+                    position: sticky;
+                    top: 6.7rem;
+                    background-color: #1C2E43;
+                    nav{
+                        width: 100%;
+                        ul{
+                            flex-direction: row;
+                            list-style: none;
+                            overflow-y: hidden;
+                            overflow-x: auto;
+                            li{
+                                padding: 2rem;
+                                a{
+                                    text-decoration: none;
+                                    color: #ffffff;
+                                    text-wrap: nowrap;
+                                    font-size: clamp(1.25rem, 3.25vw, 3.25rem);
+
+                                }
+                            }
+                        }
+                    }
+
+                }
+                .menuOptions{
+                    width: 90%;
+                    margin: auto;
                 }
             }
         }
