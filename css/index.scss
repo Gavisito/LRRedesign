@@ -530,6 +530,12 @@ body{
                         overflow-y: hidden;
                         overflow-x: auto;
                         gap: 15px;
+                        figure{
+                            img{
+                                width: 300px;
+                                height: 300px;
+                            }
+                        }
                     }
                 }
             }
@@ -666,6 +672,75 @@ body{
             .menu{
                 .sidebar{
                     top:100px;
+                }
+            }
+        }
+
+        .itemContent{
+            width: 95%;
+            margin: 5rem  auto;
+            display: flex;
+            gap: 2.5%;
+            .itemDescription{
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+                gap: 4rem;
+                h1{
+                    font-size: clamp(4rem, 6vw, 6rem);
+                }
+                p{
+                    font-size: clamp(1.5rem, 2.5vw, 2.5rem);
+                    width: 90%;
+                }
+                button{
+                    width: fit-content;
+                    padding: 1rem 3rem;
+                    background-color: #1C2E43;
+                    color: white;
+                    border: 3px solid white;
+                    outline: 5px solid black;
+                }
+                button:hover{
+                    cursor: pointer;
+                }
+            }
+            figure{
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+                gap: 2rem;
+
+                img{
+                    display: flex;
+                    width: 100%;
+                    border-radius: 10%;
+                    border: 3px solid white;
+                    outline: 5px solid black;
+                }
+                figcaption{
+                    font-size: clamp(1rem, 2vw, 2rem);
+                    text-align: center;
+                }
+            }
+        }
+
+        @media screen and (max-width:800px) {
+            .itemContent{
+                flex-direction: column-reverse;
+                gap: 3rem;
+                .itemDescription{
+                    width: 100%;
+                    text-align: center;
+                    align-items: center;
+                    p{
+                        width: 95%;
+                        margin: auto;
+                    }
+                }
+                figure{
+                    width: 90%;
+                    margin: auto;
                 }
             }
         }
@@ -891,15 +966,20 @@ body{
                 width: 100%;
                 flex-direction: row-reverse;
                 justify-content: space-between;
+                margin-top: 1.5rem;
                 input{
                     width: 47%;
                     padding: 1rem;
+                    font-size: 1.5rem;
+                    background-color: rgb(234, 234, 234);
+                    border: 3px solid white;
+                    outline: 5px solid black;
     
                 }
                 input:hover{
-                    border: 4px solid black;
                     background-color: white;
                     color: black;
+                    cursor: pointer;
                 }
 
                 #submitBtn{
@@ -907,9 +987,17 @@ body{
                     color: white;
                 }
                 #submitBtn:hover{
-                    border: 4px solid black;
                     background-color: white;
                     color: black;
+                }
+            }
+            @media screen and (max-width:500px) {
+                .formButtons{
+                    flex-direction: column;
+                    gap: 2rem;
+                    input{
+                        width: 100%;
+                    }
                 }
             }
         }    
