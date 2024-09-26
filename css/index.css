@@ -648,26 +648,31 @@ body {
   width: 50%;
   display: flex;
   flex-direction: column;
-  gap: 4rem;
+  gap: 35px;
 }
 .container .content .itemContent .itemDescription h1 {
-  font-size: clamp(4rem, 6vw, 6rem);
+  font-size: clamp(3rem, 5vw, 5rem);
+  width: 100%;
 }
 .container .content .itemContent .itemDescription p {
-  font-size: clamp(1.5rem, 2.5vw, 2.5rem);
+  font-size: clamp(1.25rem, 2vw, 2rem);
   width: 90%;
 }
-.container .content .itemContent .itemDescription button {
+.container .content .itemContent .itemDescription a {
   width: -moz-fit-content;
   width: fit-content;
+  text-decoration: none;
   padding: 1rem 3rem;
+  font-size: 1.25rem;
   background-color: #1C2E43;
   color: white;
   border: 3px solid white;
   outline: 5px solid black;
 }
-.container .content .itemContent .itemDescription button:hover {
+.container .content .itemContent .itemDescription a:hover {
   cursor: pointer;
+  background-color: white;
+  color: black;
 }
 .container .content .itemContent figure {
   width: 50%;
@@ -678,7 +683,7 @@ body {
 .container .content .itemContent figure img {
   display: flex;
   width: 100%;
-  border-radius: 10%;
+  border-radius: 5%;
   border: 3px solid white;
   outline: 5px solid black;
 }
@@ -689,7 +694,7 @@ body {
 @media screen and (max-width: 800px) {
   .container .content .itemContent {
     flex-direction: column-reverse;
-    gap: 3rem;
+    gap: 2rem;
   }
   .container .content .itemContent .itemDescription {
     width: 100%;
@@ -697,13 +702,41 @@ body {
     align-items: center;
   }
   .container .content .itemContent .itemDescription p {
-    width: 95%;
+    width: 100%;
+    padding: 0 2rem;
     margin: auto;
   }
   .container .content .itemContent figure {
     width: 90%;
     margin: auto;
   }
+}
+.container .content .tableTitle {
+  width: 90%;
+  padding-bottom: 3rem;
+  text-align: center;
+  font-size: clamp(1.25rem, 3vw, 3rem);
+  text-wrap: balance;
+  margin: auto;
+}
+.container .content .itemPairing {
+  width: 90%;
+  overflow-x: auto;
+  margin: auto;
+  padding-bottom: 5rem;
+}
+.container .content .itemPairing table {
+  width: 90%;
+  min-width: 800px;
+  min-height: 700px;
+  border-collapse: collapse;
+  margin: auto;
+  font-size: 2rem;
+  text-align: center;
+}
+.container .content .itemPairing table tbody .rowShade {
+  background-color: #1C2E43;
+  color: white;
 }
 .container .content .gallery-nav {
   width: 100%;

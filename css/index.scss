@@ -685,24 +685,29 @@ body{
                 width: 50%;
                 display: flex;
                 flex-direction: column;
-                gap: 4rem;
+                gap:35px;
                 h1{
-                    font-size: clamp(4rem, 6vw, 6rem);
+                    font-size: clamp(3rem, 5vw, 5rem);
+                    width: 100%;
                 }
                 p{
-                    font-size: clamp(1.5rem, 2.5vw, 2.5rem);
+                    font-size: clamp(1.25rem, 2vw, 2rem);
                     width: 90%;
                 }
-                button{
+                a{
                     width: fit-content;
+                    text-decoration: none;
                     padding: 1rem 3rem;
+                    font-size: 1.25rem;
                     background-color: #1C2E43;
                     color: white;
                     border: 3px solid white;
                     outline: 5px solid black;
                 }
-                button:hover{
+                a:hover{
                     cursor: pointer;
+                    background-color: white;
+                    color: black;
                 }
             }
             figure{
@@ -714,7 +719,7 @@ body{
                 img{
                     display: flex;
                     width: 100%;
-                    border-radius: 10%;
+                    border-radius: 5%;
                     border: 3px solid white;
                     outline: 5px solid black;
                 }
@@ -728,19 +733,51 @@ body{
         @media screen and (max-width:800px) {
             .itemContent{
                 flex-direction: column-reverse;
-                gap: 3rem;
+                gap: 2rem;
                 .itemDescription{
                     width: 100%;
                     text-align: center;
                     align-items: center;
                     p{
-                        width: 95%;
+                        width: 100%;
+                        padding: 0 2rem;
                         margin: auto;
                     }
                 }
                 figure{
                     width: 90%;
                     margin: auto;
+                }
+            }
+        }
+
+        .tableTitle{
+            width: 90%;
+            padding-bottom: 3rem;
+            text-align: center;
+            font-size: clamp(1.25rem, 3vw, 3rem);
+            text-wrap: balance;
+            margin: auto;
+        }
+
+        .itemPairing{
+            width: 90%;
+            overflow-x: auto;
+            margin: auto;
+            padding-bottom: 5rem;
+            table{
+                width: 90%;
+                min-width: 800px;
+                min-height: 700px;
+                border-collapse: collapse;
+                margin: auto;
+                font-size: 2rem;
+                text-align: center;
+                tbody{
+                    .rowShade{
+                        background-color: #1C2E43;
+                        color: white;
+                    }
                 }
             }
         }
