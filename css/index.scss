@@ -534,6 +534,16 @@ body{
                 }
             }
         }
+        .bgCredit{
+            width: 100%;
+            height: fit-content;
+            background-color: lightgrey;
+            text-align: center;
+            font-size: clamp(1rem, 1.5vw, 1.5rem);
+            a{
+                color:#8f4b56
+            }
+        }
 
         .externalRecipies{
             display: flex;
@@ -558,8 +568,7 @@ body{
                 width: 95%;
                 background-color: #cbcbcb90;
                 margin: auto;
-                padding-left: 5rem;
-                border-radius: 25px;
+                padding: 0 2rem;
                 section{
                     width: 100%;
                     margin-bottom: 2rem;
