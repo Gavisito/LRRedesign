@@ -522,8 +522,9 @@ body{
                     display: flex;
                     flex-direction: column;
                     h2{
-                        font-size: clamp(1.25rem, 2.5vw, 2.5rem);
+                        font-size: clamp(2.5rem, 3.5vw, 3.5rem);
                         scroll-margin-top: 170px;
+                        text-decoration: underline;
                     }
                     .menuSlider{
                         display: flex;
@@ -531,9 +532,17 @@ body{
                         overflow-x: auto;
                         gap: 15px;
                         figure{
+                            margin: 2rem;
                             img{
                                 width: 300px;
                                 height: 300px;
+                                border-radius: 50%;
+                                border: 3px solid white;
+                                outline: 5px solid black;
+                                margin-bottom: 1rem;
+                            }
+                            figcaption{
+                                text-align: center;
                             }
                         }
                     }
@@ -560,24 +569,24 @@ body{
             background: url(../images/menuBGL.jpg);
             background-size: cover;
             background-repeat: no-repeat;
-            h1{
+            p{
                 font-size: clamp(2.5rem, 3.5vw, 3.5rem);
                 text-wrap: balance;
                 padding-bottom: 2rem;
                 width: 95%;
-                background-color: #cbcbcb90;
+                background-color: #cbcbcba5;
                 margin: auto;
                 text-align: center;
                 padding-top: 5rem;
             }
             .linkCard{
                 width: 95%;
-                background-color: #cbcbcb90;
+                background-color: #cbcbcba5;
                 margin: auto;
-                padding: 0 2rem;
+                padding: 0 clamp(2rem, 10vw, 10rem);
                 section{
                     width: 100%;
-                    margin-bottom: 2rem;
+                    margin-bottom: 4rem;
                     h2{
                         font-size: clamp(1.5rem, 2.5vw, 2.5rem);
                     }
