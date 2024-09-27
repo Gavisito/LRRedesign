@@ -493,6 +493,21 @@ body {
   text-wrap: nowrap;
   padding-right: 1.5rem;
 }
+.container .content .menu .sidebar nav ul li a:hover {
+  color: #E9C5B8 !important;
+  border-left: 10px solid #E9C5B8 !important;
+  padding: 1rem 2rem;
+  background-color: #1C2E43;
+}
+.container .content .menu .sidebar nav ul li a:focus {
+  color: #E9C5B8 !important;
+  border-left: 10px solid #E9C5B8 !important;
+  background-color: #1C2E43;
+}
+.container .content .menu .sidebar nav ul li a:visited {
+  color: #0d0d38;
+  border-color: #0d0d38;
+}
 .container .content .menu .menuOptions {
   width: 74%;
   height: -moz-fit-content;
@@ -518,6 +533,7 @@ body {
 }
 .container .content .menu .menuOptions section .menuSlider figure {
   margin: 2rem;
+  width: 300px;
 }
 .container .content .menu .menuOptions section .menuSlider figure img {
   width: 300px;
@@ -530,6 +546,18 @@ body {
 .container .content .menu .menuOptions section .menuSlider figure figcaption {
   text-align: center;
 }
+.container .content .menu .menuOptions section .menuSlider figure figcaption a {
+  color: black;
+}
+.container .content .menu .menuOptions section .menuSlider figure figcaption a:hover {
+  color: #E9C5B8 !important;
+}
+.container .content .menu .menuOptions section .menuSlider figure figcaption a:focus {
+  color: #E9C5B8 !important;
+}
+.container .content .menu .menuOptions section .menuSlider figure figcaption a:visited {
+  color: #0d0d38;
+}
 .container .content .bgCredit {
   width: 100%;
   height: -moz-fit-content;
@@ -540,6 +568,15 @@ body {
 }
 .container .content .bgCredit a {
   color: #8f4b56;
+}
+.container .content .bgCredit a:hover {
+  color: #1C2E43 !important;
+}
+.container .content .bgCredit a:focus {
+  color: #1C2E43 !important;
+}
+.container .content .bgCredit a:visited {
+  color: #0d0d38;
 }
 .container .content .externalRecipies {
   display: flex;
@@ -586,6 +623,15 @@ body {
   text-decoration: underline;
   color: #8f4b56;
 }
+.container .content .externalRecipies .linkCard section ul li a:hover {
+  color: #dc8694 !important;
+}
+.container .content .externalRecipies .linkCard section ul li a:focus {
+  color: #dc8694 !important;
+}
+.container .content .externalRecipies .linkCard section ul li a:visited {
+  color: #0d0d38;
+}
 @media screen and (max-width: 1025px) {
   .container .content .menuHeader {
     margin-bottom: 0rem;
@@ -615,7 +661,8 @@ body {
   }
   .container .content .menu .sidebar nav ul li a {
     text-decoration: none;
-    color: #ffffff;
+    border-bottom: none;
+    color: #ffffff !important;
     text-wrap: nowrap;
     font-size: clamp(1.25rem, 3.25vw, 3.25rem);
   }

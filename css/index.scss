@@ -334,7 +334,6 @@ body{
             }
         }
 
-
         .reviews{
             width: 100%;
             display: flex;
@@ -508,6 +507,21 @@ body{
                                 text-wrap: nowrap;
                                 padding-right: 1.5rem;
                             }
+                            a:hover{
+                                color: #E9C5B8 !important;
+                                border-left: 10px solid #E9C5B8 !important;
+                                padding: 1rem 2rem;
+                                background-color: #1C2E43;
+                            }
+                            a:focus{
+                                color: #E9C5B8 !important;
+                                border-left: 10px solid #E9C5B8 !important;
+                                background-color: #1C2E43;
+                            }
+                            a:visited{
+                                color: #0d0d38;
+                                border-color: #0d0d38;
+                            }
                         }
                     }
                 }
@@ -533,6 +547,7 @@ body{
                         gap: 15px;
                         figure{
                             margin: 2rem;
+                            width: 300px;
                             img{
                                 width: 300px;
                                 height: 300px;
@@ -543,6 +558,18 @@ body{
                             }
                             figcaption{
                                 text-align: center;
+                                a{
+                                    color: black;
+                                }
+                                a:hover{
+                                    color: #E9C5B8 !important;
+                                }
+                                a:focus{
+                                    color: #E9C5B8 !important;
+                                }
+                                a:visited{
+                                    color: #0d0d38;
+                                }
                             }
                         }
                     }
@@ -557,6 +584,15 @@ body{
             font-size: clamp(1rem, 1.5vw, 1.5rem);
             a{
                 color:#8f4b56
+            }
+            a:hover{
+                color: #1C2E43 !important;
+            }
+            a:focus{
+                color: #1C2E43 !important;
+            }
+            a:visited{
+                color: #0d0d38;
             }
         }
 
@@ -600,6 +636,15 @@ body{
                                 text-decoration: underline;
                                 color: #8f4b56;
                             }
+                            a:hover{
+                                color: #dc8694 !important;
+                            }
+                            a:focus{
+                                color: #dc8694 !important;
+                            }
+                            a:visited{
+                                color: #0d0d38;
+                            }
                         }
                     }
                 }
@@ -626,14 +671,15 @@ body{
                             list-style: none;
                             overflow-y: hidden;
                             overflow-x: auto;
+                            
                             li{
                                 padding: 2rem;
                                 a{
-                                    text-decoration: none;
-                                    color: #ffffff;
+                                    text-decoration: none ;
+                                    border-bottom: none;
+                                    color: #ffffff !important;
                                     text-wrap: nowrap;
                                     font-size: clamp(1.25rem, 3.25vw, 3.25rem);
-
                                 }
                             }
                         }
@@ -791,7 +837,6 @@ body{
             }
         }
 
-
         .gallery-nav{
             width: 100%;
             height: auto;
@@ -903,9 +948,7 @@ body{
                 }
             }
         }
-        
     }
-
         form{
             display: flex;
             flex-direction: column;
@@ -1006,7 +1049,6 @@ body{
                 }
             }
             
-    
             .formButtons{
                 display: flex;
                 width: 100%;
