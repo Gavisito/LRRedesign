@@ -1027,6 +1027,46 @@ body {
     width: 100%;
   }
 }
+.container .citation {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding-bottom: 2rem;
+}
+.container .citation h1 {
+  font-size: clamp(2rem, 6vw, 6rem);
+  text-align: center;
+  padding: 7% 0;
+}
+.container .citation figure {
+  width: 95%;
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  gap: 1.5rem;
+}
+.container .citation figure img {
+  width: 50%;
+  height: auto;
+  max-height: 80rem;
+  margin: auto;
+  border-radius: 2%;
+}
+.container .citation figure figcaption {
+  margin: auto;
+  width: 50%;
+  font-size: clamp(1rem, 2vw, 2rem);
+  text-align: center;
+}
+@media screen and (max-width: 1200px) {
+  .container .citation figure {
+    flex-direction: column;
+  }
+  .container .citation figure img {
+    width: 90%;
+  }
+}
 .container footer {
   background-color: #1C2E43;
   color: white;
