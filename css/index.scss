@@ -57,49 +57,59 @@ body{
                 justify-content: center;
                 align-items: center;
                 display: flex;
-                .loginbutton{
-                    background-color: #010B13;
-                    color: white;
-                    cursor: pointer;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    width:3rem;
-                    height: 3rem;
-                    border-radius: 50%;
-                    border: none;
-                    flex-direction: column;
-                    font-size: 16px;
-                    .body{
+                .accountLink{
+                    .loginbutton{
+                        background-color: #010B13;
+                        color: white;
+                        cursor: pointer;
                         display: flex;
-                        justify-content: center;
                         align-items: center;
+                        justify-content: center;
+                        width:3rem;
+                        height: 3rem;
+                        border-radius: 50%;
+                        border: none;
                         flex-direction: column;
+                        font-size: 16px;
+                        .body{
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            flex-direction: column;
+                            .head{
+                                background-color: #F4F0EC;
+                                width:1rem;
+                                height: 1rem;
+                                border-radius: 50%;
+                            }
+                            
+                            .lbody{
+                                width: 1.25rem;
+                                height: 0.65rem;
+                                background-color: #F4F0EC;
+                                border-radius: 30px 30px 0 0; 
+                            }
+                        }
+                    }
+                    .loginbutton:hover{
+                        background-color: #1C2E43;
+                        outline: 2px solid #05051f;
                         .head{
-                            background-color: #F4F0EC;
-                            width:1rem;
-                            height: 1rem;
-                            border-radius: 50%;
+                            background-color: #E9C5B8;
                         }
-                        
                         .lbody{
-                            width: 1.25rem;
-                            height: 0.65rem;
-                            background-color: #F4F0EC;
-                            border-radius: 30px 30px 0 0; 
+                            background-color: #E9C5B8;
                         }
                     }
+
                 }
-                .loginbutton:hover{
-                    background-color: #1C2E43;
-                    outline: 2px solid #05051f;
-                    .head{
-                        background-color: #E9C5B8;
-                    }
-                    .lbody{
-                        background-color: #E9C5B8;
-                    }
+                .accountLink:hover{
+                    color: transparent;
+                    border-left: none ;
+                    padding: 0;
+                    background-color: transparent;
                 }
+
             }
 
             .menuIcon {

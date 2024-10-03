@@ -65,7 +65,7 @@ body {
   align-items: center;
   display: flex;
 }
-.container header .header-nav .header-buttons .loginbutton {
+.container header .header-nav .header-buttons .accountLink .loginbutton {
   background-color: #010B13;
   color: white;
   cursor: pointer;
@@ -79,33 +79,39 @@ body {
   flex-direction: column;
   font-size: 16px;
 }
-.container header .header-nav .header-buttons .loginbutton .body {
+.container header .header-nav .header-buttons .accountLink .loginbutton .body {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-.container header .header-nav .header-buttons .loginbutton .body .head {
+.container header .header-nav .header-buttons .accountLink .loginbutton .body .head {
   background-color: #F4F0EC;
   width: 1rem;
   height: 1rem;
   border-radius: 50%;
 }
-.container header .header-nav .header-buttons .loginbutton .body .lbody {
+.container header .header-nav .header-buttons .accountLink .loginbutton .body .lbody {
   width: 1.25rem;
   height: 0.65rem;
   background-color: #F4F0EC;
   border-radius: 30px 30px 0 0;
 }
-.container header .header-nav .header-buttons .loginbutton:hover {
+.container header .header-nav .header-buttons .accountLink .loginbutton:hover {
   background-color: #1C2E43;
   outline: 2px solid #05051f;
 }
-.container header .header-nav .header-buttons .loginbutton:hover .head {
+.container header .header-nav .header-buttons .accountLink .loginbutton:hover .head {
   background-color: #E9C5B8;
 }
-.container header .header-nav .header-buttons .loginbutton:hover .lbody {
+.container header .header-nav .header-buttons .accountLink .loginbutton:hover .lbody {
   background-color: #E9C5B8;
+}
+.container header .header-nav .header-buttons .accountLink:hover {
+  color: transparent;
+  border-left: none;
+  padding: 0;
+  background-color: transparent;
 }
 .container header .header-nav .menuIcon {
   display: none;
