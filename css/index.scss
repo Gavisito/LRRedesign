@@ -1169,6 +1169,9 @@ body{
 
                     li{
                         font-size: clamp(1rem, 1.75vw, 1.75rem);
+                        a{
+                            color: white;
+                        }
                     }
                 }
             }

@@ -1102,6 +1102,9 @@ body {
 .container footer .business-info .footer-contact ul li {
   font-size: clamp(1rem, 1.75vw, 1.75rem);
 }
+.container footer .business-info .footer-contact ul li a {
+  color: white;
+}
 .container footer hr {
   width: 90%;
   margin: auto;
