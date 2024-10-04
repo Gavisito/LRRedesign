@@ -845,13 +845,14 @@ body {
   }
   .container .content .accountPage .userHeader {
     width: 100%;
-    flex-direction: column;
+    flex-direction: row;
   }
   .container .content .accountPage .userHeader figure {
     width: 50%;
   }
   .container .content .accountPage .userHeader .userInfo {
     justify-content: space-around;
+    text-align: start;
   }
   .container .content .accountPage .tableReserveInfo {
     width: 100%;

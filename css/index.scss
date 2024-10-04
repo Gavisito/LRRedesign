@@ -891,12 +891,13 @@ body{
                 flex-direction: row;
                 .userHeader{
                     width: 100%;
-                    flex-direction: column;
+                    flex-direction: row;
                     figure{
                         width: 50%;
                     }
                     .userInfo{
                         justify-content: space-around;
+                        text-align: start;
                     }
                 }
                 .tableReserveInfo{
