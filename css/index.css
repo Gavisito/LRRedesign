@@ -805,10 +805,13 @@ body {
 .container .content .accountPage {
   display: flex;
   width: 100%;
-  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: space-between;
-  padding: 3rem 3%;
-  gap: 25px;
+}
+.container .content .accountPage h1 {
+  text-align: center;
+  font-size: clamp(2.5rem, 4vw, 4rem);
+  margin-top: 3rem;
 }
 .container .content .accountPage .userHeader {
   display: flex;
@@ -816,12 +819,14 @@ body {
   width: -moz-fit-content;
   width: fit-content;
   justify-content: space-between;
+  background-color: #1C2E43;
+  width: 100%;
 }
 .container .content .accountPage .userHeader figure {
   width: 100%;
 }
 .container .content .accountPage .userHeader figure img {
-  width: 100%;
+  width: 300px;
   height: auto;
   border-radius: 5%;
   border: 3px solid white;
@@ -832,30 +837,32 @@ body {
   flex-direction: column;
 }
 .container .content .accountPage .tableReserveInfo {
-  width: 50%;
-  overflow-x: auto;
+  width: 85%;
+  max-height: 500px;
+  overflow: auto;
+  margin: 5% auto;
 }
 .container .content .accountPage .tableReserveInfo table {
   min-width: 1000px;
   border-collapse: collapse;
+  font-size: clamp(1.25rem, 2vw, 1.75rem);
+}
+.container .content .accountPage .tableReserveInfo table thead th {
+  padding: 1rem 2.5rem;
+  text-wrap: nowrap;
+}
+.container .content .accountPage .tableReserveInfo table tbody th {
+  padding: 1rem 2.5rem;
+}
+.container .content .accountPage .tableReserveInfo table tbody td {
+  padding: 1rem;
+}
+.container .content .accountPage .tableReserveInfo table .rowShade {
+  background-color: rgba(28, 46, 67, 0.1254901961);
 }
 @media screen and (max-width: 800px) {
-  .container .content .accountPage {
-    flex-direction: row;
-  }
-  .container .content .accountPage .userHeader {
-    width: 100%;
-    flex-direction: row;
-  }
-  .container .content .accountPage .userHeader figure {
-    width: 50%;
-  }
-  .container .content .accountPage .userHeader .userInfo {
-    justify-content: space-around;
-    text-align: start;
-  }
   .container .content .accountPage .tableReserveInfo {
-    width: 100%;
+    width: 95%;
   }
 }
 .container .content .gallery-nav {
