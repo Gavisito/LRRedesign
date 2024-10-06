@@ -885,8 +885,8 @@ body{
             .tableReserveInfo{
                 width: 85%;
                 max-height: 500px;
-                overflow: auto;
                 margin: 5% auto;
+                overflow: auto;
                 table{
                     min-width: 1000px;
                     border-collapse: collapse;
@@ -895,6 +895,9 @@ body{
                         th{
                             padding: 1rem 2.5rem;
                             text-wrap: nowrap;
+                            position: sticky;
+                            top: -1px;
+                            background-color: white;
                         }
                     }
                     tbody{

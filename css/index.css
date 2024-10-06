@@ -839,8 +839,8 @@ body {
 .container .content .accountPage .tableReserveInfo {
   width: 85%;
   max-height: 500px;
-  overflow: auto;
   margin: 5% auto;
+  overflow: auto;
 }
 .container .content .accountPage .tableReserveInfo table {
   min-width: 1000px;
@@ -850,6 +850,9 @@ body {
 .container .content .accountPage .tableReserveInfo table thead th {
   padding: 1rem 2.5rem;
   text-wrap: nowrap;
+  position: sticky;
+  top: -1px;
+  background-color: white;
 }
 .container .content .accountPage .tableReserveInfo table tbody th {
   padding: 1rem 2.5rem;
