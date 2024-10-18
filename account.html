@@ -17,7 +17,7 @@
                 <div class="header-nav">
                     <a href="./index.html">Lunita Hermosa</a>
                     <div class="header-buttons">
-                        <a class="accountLink" href="./account.html">
+                        <a id="accountBTN" class="accountLink" href="./account.html">
                             <div class="loginbutton">
                                 <div class="body">
                                     <div class="head"></div>
@@ -45,121 +45,32 @@
                 <div class="accountPage">
                     <div class="userHeader">
                         <figure>
-                            <img src="./images/arepas.jpeg" alt="User Profile Picture">
+                            <div class="blankSpace"></div>
+                            <figcaption id="greeting"></figcaption>
                         </figure>
-                        <div class="userInfo">
-                            <p>Username</p>
-                            <p>Email Address</p>
-                            <p>Phone Number</p>
-                        </div>
                     </div>
-                    <h1>Table Reserved</h1>
+                    <h1>Upcoming Reservation</h1>
                     <div class="tableReserveInfo">
                         <table border="1">
                             <thead>
                                 <tr>
+                                    <th>Reservation Name</th>
+                                    <th>Email</th>
+                                    <th>Phone Number</th>
                                     <th>Date Reserved</th>
                                     <th>Time Reserved</th>
                                     <th>Reservation Attendance</th>
                                     <th>Reservation Notes</th>
                                 </tr>
                             </thead>
-                            <tbody>
-                                <tr class="rowShade">
-                                    <td>09-10-2024</td>
-                                    <td>7 PM</td>
-                                    <td>5</td>
-                                    <td>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                                         Cumque minus obcaecati commodi reprehenderit, ex alias. 
-                                         Voluptatibus hic similique natus tempore, neque dolores.
-                                         Eius iusto, optio suscipit excepturi maiores quaerat expedita?
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>09-10-2024</td>
-                                    <td>7 PM</td>
-                                    <td>5</td>
-                                    <td>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                                         Cumque minus obcaecati commodi reprehenderit, ex alias. 
-                                         Voluptatibus hic similique natus tempore, neque dolores.
-                                         Eius iusto, optio suscipit excepturi maiores quaerat expedita?
-                                    </td>
-                                </tr>
-                                <tr class="rowShade">
-                                    <td>09-10-2024</td>
-                                    <td>7 PM</td>
-                                    <td>5</td>
-                                    <td>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                                         Cumque minus obcaecati commodi reprehenderit, ex alias. 
-                                         Voluptatibus hic similique natus tempore, neque dolores.
-                                         Eius iusto, optio suscipit excepturi maiores quaerat expedita?
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>09-10-2024</td>
-                                    <td>7 PM</td>
-                                    <td>5</td>
-                                    <td>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                                         Cumque minus obcaecati commodi reprehenderit, ex alias. 
-                                         Voluptatibus hic similique natus tempore, neque dolores.
-                                         Eius iusto, optio suscipit excepturi maiores quaerat expedita?
-                                    </td>
-                                </tr>
-                                <tr class="rowShade">
-                                    <td>09-10-2024</td>
-                                    <td>7 PM</td>
-                                    <td>5</td>
-                                    <td>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                                         Cumque minus obcaecati commodi reprehenderit, ex alias. 
-                                         Voluptatibus hic similique natus tempore, neque dolores.
-                                         Eius iusto, optio suscipit excepturi maiores quaerat expedita?
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>09-10-2024</td>
-                                    <td>7 PM</td>
-                                    <td>5</td>
-                                    <td>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                                         Cumque minus obcaecati commodi reprehenderit, ex alias. 
-                                         Voluptatibus hic similique natus tempore, neque dolores.
-                                         Eius iusto, optio suscipit excepturi maiores quaerat expedita?
-                                    </td>
-                                </tr>
-                                <tr class="rowShade">
-                                    <td>09-10-2024</td>
-                                    <td>7 PM</td>
-                                    <td>5</td>
-                                    <td>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                                         Cumque minus obcaecati commodi reprehenderit, ex alias. 
-                                         Voluptatibus hic similique natus tempore, neque dolores.
-                                         Eius iusto, optio suscipit excepturi maiores quaerat expedita?
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>09-10-2024</td>
-                                    <td>7 PM</td>
-                                    <td>5</td>
-                                    <td>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                                         Cumque minus obcaecati commodi reprehenderit, ex alias. 
-                                         Voluptatibus hic similique natus tempore, neque dolores.
-                                         Eius iusto, optio suscipit excepturi maiores quaerat expedita?
-                                    </td>
-                                </tr>
-                                <tr class="rowShade">
-                                    <td>09-10-2024</td>
-                                    <td>7 PM</td>
-                                    <td>5</td>
-                                    <td>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                                         Cumque minus obcaecati commodi reprehenderit, ex alias. 
-                                         Voluptatibus hic similique natus tempore, neque dolores.
-                                         Eius iusto, optio suscipit excepturi maiores quaerat expedita?
-                                    </td>
-                                </tr>
-                            </tbody>
+                            <tbody id="reservationInformation"></tbody>
                         </table>
                     </div>
-
-
+                    <div class="updateRes">
+                        <h2>Need to change reservation name or date?</h2>
+                        <h3>No worries! Click the button below to make necessary changes</h3>
+                        <button id="updateReserve">Update Reservation</button>
+                    </div>
                 </div>
             </div>
             <footer>
@@ -221,9 +132,11 @@
                 <hr>
                 <span>Lunita Hermosa <br> This website is developed as an educational project</span>
             </footer>
-
         </div>
-
+        <script src="./js/accountBTN.js" async defer></script>
         <script src="./js/mainMenu.js" async defer></script>
+        <script src="./js/displayData.js" async defer></script>
+        <script src="./js/updateReserve.js" async defer></script>
+        
     </body>
 </html>
