@@ -59,31 +59,31 @@
                     <h1>Table Reservation</h1>
                     <fieldset class="personInfo">
                         <legend>Personal Details:</legend>
-                        <label for="reservationName">Your name: <br>
-                            <input type="text" name="reservationName" id="reservationName"  placeholder="e.g. John Doe">
+                        <label for="reservationName">Your name:* <br>
+                            <input required type="text" name="reservationName" id="reservationName"  placeholder="e.g. John Doe">
                         </label>
                         <fieldset>
-                            <label for="emailAddress">Email Address: <br>
-                                <input type="email" id="emailAddress" name="emailAddress" placeholder="username@example.com">
+                            <label for="emailAddress">Email Address:* <br>
+                                <input required type="email" id="emailAddress" name="emailAddress" placeholder="username@example.com">
                             </label>
     
-                            <label for="phoneNumber">Phone Number: <br>
-                                <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="(123)-456-7890">
+                            <label for="phoneNumber">Phone Number:* <br>
+                                <input required type="tel" id="phoneNumber" name="phoneNumber" placeholder="(123)-456-7890">
                             </label>
                         </fieldset>
                     </fieldset>
                     <fieldset class="reservationInfo">
-                        <legend>Reservation Details:</legend>
-                        <label for="reservationDate">Date: <br>
-                            <input type="date" name="reservationDate" id="reservationDate">
+                        <legend>Reservation Details:*</legend>
+                        <label for="reservationDate">Date:* <br>
+                            <input required type="date" name="reservationDate" id="reservationDate">
                         </label>
 
-                        <label for="reservationTime">Time: <br>
-                            <input type="time" name="reservationTime" id="reservationTime">
+                        <label for="reservationTime">Time:* <br>
+                            <input required type="time" name="reservationTime" id="reservationTime">
                         </label>
 
-                        <label for="attendance">Attendance:<br>
-                            <input type="text" id="attendance" name="attendance" list="numppl" placeholder="5">
+                        <label for="attendance">Attendance:*<br>
+                            <input required type="text" id="attendance" name="attendance" list="numppl" placeholder="5">
                             <datalist id="numppl">
                                 <option value="1"></option>
                                 <option value="2"></option>
@@ -100,7 +100,7 @@
                         </label>
                     </fieldset>
                     <fieldset class="formButtons">
-                        <input id="submitBtn" type="button" value="Submit">
+                        <input id="submitBtn" type="submit" value="Submit">
                         <input type="reset" value="Clear">
                     </fieldset>
                 </form>
@@ -163,7 +163,12 @@
                     </section>
                 </div>
                 <hr>
-                <span>Lunita Hermosa <br> This website is developed as an educational project</span>
+                <span id="lastmod">Lunita Hermosa <br> This website is developed as an educational project
+                <script>
+                    let lastmod = document.lastModified;
+                    document.getElementById('lastmod').innerHTML += "<p>page last modified on: " + lastmod + "</p>"
+                </script>
+                </span>
             </footer>
 
         </div>
