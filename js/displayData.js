@@ -2,9 +2,8 @@ function displayData() {
     var storage = "";//this variable is used to store html markup to insert for display into the account.html table
     
     // Retrieve data from LocalStorage
-    var reservationData = JSON.parse(localStorage.getItem('reserveData'));
+    var reservationData = JSON.parse(localStorage.getItem('reserveData')); //return into array format for me to index
     console.log(reservationData); //checking how the data looks in inspect dev tools
-
 
     var greetName = document.getElementById('greeting');
     storage += "<h2>Looking Forward To See You There, </br> " + reservationData[0] + "</h2>"

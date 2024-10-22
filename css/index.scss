@@ -609,12 +609,13 @@ body{
         .externalRecipies{
             display: flex;
             flex-direction: column;
-            width: 100%;
+            width:100%;
             margin: 5rem 0 auto;
             padding: 5rem 0;
-            background: url(../images/menuBGL.jpg);
-            background-size: cover;
+            background-size:cover;
+            background-position: 100% 50%;
             background-repeat: no-repeat;
+
             p{
                 font-size: clamp(2.5rem, 3.5vw, 3.5rem);
                 text-wrap: balance;
