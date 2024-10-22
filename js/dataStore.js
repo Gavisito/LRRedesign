@@ -14,7 +14,7 @@ function storeData(){
     //condition when they submit null values into the form. this mitigates the issue where "click" in the addeventlistner moves onto displaying it into the account pages
     if (!reservationName || !emailAddress || !phoneNumber || !reservationDate || !reservationTime || !attendance) {
         alert("Please fill in all required fields.");
-        return;
+        return; //this helps stopping the form submitting anything
     }
     //the conditiona where all the required fields have been filled out (assuming they are valid information and not sql injection ;())
     else{

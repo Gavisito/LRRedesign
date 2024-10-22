@@ -852,6 +852,7 @@ body{
             display: flex;
             width: 100%;
             flex-direction: column;
+            padding-bottom: 5rem ;
 
             .userHeader{
                 display: flex;
@@ -972,50 +973,6 @@ body{
                     }
                 }
             }
-
-            .updateRes{
-                display: flex;
-                flex-direction: column;
-                gap: 1.5rem;
-                width: fit-content;
-                margin: 4rem auto;
-                align-items: center;
-                justify-content: center;
-                text-align: center;
-                padding: 3.5rem;
-                background-color: #1C2E43;
-                border: 3px solid white;
-                outline: 3px solid black;
-
-                h2{
-                    font-size: clamp(2rem, 3.5vw, 2.5rem);
-                    color: #e39ba7;
-                    width: 100%;
-                }
-                h3{
-                    font-size: clamp(1rem, 2vw, 2rem);
-                    color: white;
-                    width: 100%;
-                }
-                button{
-                    width: fit-content;
-                    padding: 1rem 2rem;
-                    background-color: #1C2E43;
-                    color: white;
-                    border: 2px solid white;
-                    outline: 2px solid black;
-                }
-                button:hover{
-                    cursor: pointer;
-                    color: black;
-                    background-color: white;
-                    font-weight: bolder;
-                }
-            }
-            @media screen and (max-width: 700px) {
-                .updateRes{
-                    width: 80%;
-            }}
         }
         @media screen and (max-width: 800px) {
             .accountPage{
