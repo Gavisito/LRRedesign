@@ -6,15 +6,15 @@ function displayData() {
     console.log(reservationData); //checking how the data looks in inspect dev tools
 
     var greetName = document.getElementById('greeting');
-    storage += "<h2>Looking Forward To See You There, </br> " + reservationData[0] + "</h2>"
-    greetName.innerHTML += storage;
+    storage = "<h2>Looking Forward To See You There, </br> " + reservationData[0] + "</h2>"
+    greetName.innerHTML = storage;
     storage = ""//this reset the strorage variable for other uses
 
     var showResult = document.getElementById('reservationInformation');//this points to the table body to enter rows.
     // 'reservationData' is boolean to check if it is true that there is data in the local stroage object 'reserveData'
     if (reservationData) {//the case where there is data to insert into the table body from form submission.
         storage += "<tr>";
-            storage += "<td>" + reservationData[0] + "</td>" ;
+            storage += "<td>" + reservationData[0] + "<input id='editName' style='margin-left:1rem; padding:0.25rem 0.5rem' type='button' value='edit name'>" + "</td>" ;
             storage += "<td>" + reservationData[1] + "</td>" ;
             storage += "<td>" + reservationData[2] + "</td>" ;
             storage += "<td>" + reservationData[3] + "</td>" ;
@@ -35,8 +35,10 @@ function displayData() {
         storage += "</tr>" ;
     }
     
-    showResult.innerHTML += storage;
+    showResult.innerHTML = storage;
     storage = ""
-    
+    //this is for the edit name button to function whenever it gets redisplay for each edit submitted
+    var updateName = document.getElementById('editName');
+    updateName.addEventListener('click', updateReserve, false);
 }
 window.addEventListener("load", displayData, false)
