@@ -8,7 +8,7 @@ function updateReserve(){
         console.log(reservationData)
         updateData = JSON.stringify(reservationData); //this convert the array into a string array '[data, data]'
         localStorage.setItem('reserveData', updateData); //this is method i used to update the reservation data
-        displayData()
+        displayData()//this will redisplay the new updated name for the user once they submit it in the prompt
     } else {
         alert('enter a proper name.');
     }

@@ -37,7 +37,7 @@ function displayData() {
     
     showResult.innerHTML = storage;
     storage = ""
-    //this is for the edit name button to function whenever it gets redisplay for each edit submitted
+    //this is for the edit name button to function whenever it gets redisplay it will directly call the update reserve function so it can be click again
     var updateName = document.getElementById('editName');
     updateName.addEventListener('click', updateReserve, false);
 }
