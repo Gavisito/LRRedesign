@@ -1,15 +1,15 @@
-function next(){
+function next(){//this function is activated when the user presses the next button/right arrow button
     console.log('next')
-    carousel.scrollLeft += 380;
+    carousel.scrollLeft += 380;//scroll to the right
     carousel.scrollTo('smooth')
 }
 
-function back(){
+function back(){ //this function is activated when the user presses the back button/left arrow button
     console.log('previous')
-    carousel.scrollLeft -= 380;
+    carousel.scrollLeft -= 380;//scroll to the left
 }
 
-function settingUP(){
+function settingUP(){ //getting and setting up clicking events for the buttons
     var nextBTN = document.getElementById('next');
     var previousBTN = document.getElementById('previous');
 
@@ -17,5 +17,5 @@ function settingUP(){
     previousBTN.addEventListener('click', back, false);
 }
 
-var carousel = document.getElementById('carouselNav')
-window.addEventListener('load', settingUP, false)
+var carousel = document.getElementById('carouselNav') //getting the carousel id to scroll
+window.addEventListener('load', settingUP, false) //loading up
