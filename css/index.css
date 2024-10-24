@@ -1077,24 +1077,27 @@ body {
   display: flex;
   flex-direction: column;
   width: 90%;
-  gap: 6.5rem;
+  gap: 4.5rem;
   height: -moz-fit-content;
   height: fit-content;
   margin: 5rem auto;
 }
 .container .content form h1 {
-  font-size: clamp(2.25rem, 3vw, 3rem);
+  text-align: center;
+  text-decoration: underline;
+  font-size: clamp(2.25rem, 4vw, 4rem);
 }
 .container .content form fieldset {
   border: none;
 }
 .container .content form fieldset legend {
-  font-size: clamp(1.5rem, 2vw, 2rem);
+  font-size: clamp(1.75rem, 2.25vw, 2.25rem);
+  font-weight: bold;
   text-decoration: underline;
   margin: 1.5vh 0;
 }
 .container .content form fieldset label {
-  font-size: clamp(1.5rem, 2vw, 1.75rem);
+  font-size: clamp(1.5rem, 2vw, 2rem);
   display: flex;
   flex-direction: column;
   gap: 1rem;
