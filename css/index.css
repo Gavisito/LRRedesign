@@ -340,7 +340,7 @@ body {
   display: flex;
   flex-direction: row;
   margin: auto;
-  gap: 1.5rem;
+  gap: 2.5rem;
 }
 .container .content .citation figure img {
   width: 50%;
@@ -352,6 +352,7 @@ body {
 .container .content .citation figure figcaption {
   margin: auto;
   width: 50%;
+  padding: 1rem;
   font-size: clamp(1rem, 2vw, 2rem);
   text-align: center;
 }
@@ -360,7 +361,11 @@ body {
     flex-direction: column;
   }
   .container .content .citation figure img {
+    width: 95%;
+  }
+  .container .content .citation figure figcaption {
     width: 90%;
+    padding: 0;
   }
 }
 .container .content .reviews {

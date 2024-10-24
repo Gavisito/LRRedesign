@@ -359,7 +359,7 @@ body{
                 display: flex;
                 flex-direction: row;
                 margin: auto;
-                gap: 1.5rem;
+                gap: 2.5rem;
                 img{
                     width:50%;
                     height: auto;
@@ -370,6 +370,7 @@ body{
                 figcaption{
                     margin: auto;
                     width: 50%;
+                    padding: 1rem;
                     font-size: clamp(1rem, 2vw, 2rem);
                     text-align: center;
                 }
@@ -381,7 +382,11 @@ body{
                 figure{
                     flex-direction: column;
                     img{
+                        width: 95%;
+                    }
+                    figcaption{
                         width: 90%;
+                        padding: 0;
                     }
                 }
             }
