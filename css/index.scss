@@ -693,14 +693,14 @@ body{
             background-repeat: no-repeat;
 
             p{
-                font-size: clamp(2.5rem, 3.5vw, 3.5rem);
-                text-wrap: balance;
-                padding-bottom: 2rem;
+                font-size: clamp(1.75rem, 3.5vw, 3.5rem);
+                text-wrap: pretty;
                 width: 95%;
                 background-color: #cbcbcba5;
                 margin: auto;
                 text-align: center;
-                padding-top: 5rem;
+                padding:3rem 8px;
+
             }
             .linkCard{
                 width: 95%;
@@ -709,15 +709,13 @@ body{
                 padding: 0 clamp(2rem, 10vw, 10rem);
                 section{
                     width: 100%;
-                    margin-bottom: 4rem;
+                    margin-bottom: 3rem;
                     h2{
                         font-size: clamp(1.5rem, 2.5vw, 2.5rem);
                     }
                     ul{
                         list-style:square inside;
-                        padding-bottom: 1rem;
                         li{
-                            padding-left: 2rem;
                             font-size: clamp(1rem, 2vw, 2rem);
                             a{
                                 text-decoration: underline;
@@ -779,6 +777,13 @@ body{
                 }
             }
         }
+        @media screen and (max-width: 1050px){
+            .menu{
+                .sidebar{
+                    top:120px;
+                }
+            }
+        }
         @media screen and (max-width: 1000px){
             .menu{
                 .sidebar{
@@ -786,18 +791,10 @@ body{
                 }
             }
         }
-
-        @media screen and (max-width: 900px){
+        @media screen and (max-width: 950px){
             .menu{
                 .sidebar{
-                    top:85px;
-                }
-            }
-        }
-        @media screen and (max-width: 800px){
-            .menu{
-                .sidebar{
-                    top:85px;
+                    top:81px;
                 }
             }
         }
@@ -814,6 +811,15 @@ body{
             .menu{
                 .sidebar{
                     top:100px;
+                }
+            }
+        }
+
+
+        @media screen and (max-width: 330px){
+            .menu{
+                .sidebar{
+                    top:80px;
                 }
             }
         }
@@ -942,10 +948,9 @@ body{
                     flex-direction: row;
                     .blankSpace{
                         width: 30%;
-                        height: 400px;
+                        height: 550px;
                         background-color: #1C2E43;
-                        background-image: url(/images/menuBGL.jpg);
-                        background-position: 0;
+                        background-size: cover;
                     }
                     figcaption{
                         width: 70%;
@@ -967,7 +972,7 @@ body{
                 }
             }
 
-            @media screen and (max-width:500px){
+            @media screen and (max-width:800px){
                 .userHeader{
                     border: 15px solid #1C2E43;
                     figure{
@@ -978,12 +983,12 @@ body{
                         }
                         figcaption{
                             width: 100%;
-                            padding: 5rem 0;
-                            background-image: url(/images/menuBGL.jpg);
+                            padding: 10rem 0;
                             background-position: 50% ;
                             background-size: cover;
                             background-repeat: no-repeat;
                             position: relative;
+                            background-image: url(../images/sky4.jpeg);
 
                             h2{
                                 color: white;
@@ -1136,8 +1141,8 @@ body{
             display: flex;
             flex-direction: column;
             width: 90%;
+            gap: 6.5rem;
             height: fit-content;
-            gap: 2vh;
             margin:5rem auto;
 
             h1{

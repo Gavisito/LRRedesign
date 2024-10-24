@@ -668,14 +668,13 @@ body {
   background-repeat: no-repeat;
 }
 .container .content .externalRecipies p {
-  font-size: clamp(2.5rem, 3.5vw, 3.5rem);
-  text-wrap: balance;
-  padding-bottom: 2rem;
+  font-size: clamp(1.75rem, 3.5vw, 3.5rem);
+  text-wrap: pretty;
   width: 95%;
   background-color: rgba(203, 203, 203, 0.6470588235);
   margin: auto;
   text-align: center;
-  padding-top: 5rem;
+  padding: 3rem 8px;
 }
 .container .content .externalRecipies .linkCard {
   width: 95%;
@@ -685,17 +684,15 @@ body {
 }
 .container .content .externalRecipies .linkCard section {
   width: 100%;
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
 }
 .container .content .externalRecipies .linkCard section h2 {
   font-size: clamp(1.5rem, 2.5vw, 2.5rem);
 }
 .container .content .externalRecipies .linkCard section ul {
   list-style: square inside;
-  padding-bottom: 1rem;
 }
 .container .content .externalRecipies .linkCard section ul li {
-  padding-left: 2rem;
   font-size: clamp(1rem, 2vw, 2rem);
 }
 .container .content .externalRecipies .linkCard section ul li a {
@@ -750,19 +747,19 @@ body {
     margin: auto;
   }
 }
+@media screen and (max-width: 1050px) {
+  .container .content .menu .sidebar {
+    top: 120px;
+  }
+}
 @media screen and (max-width: 1000px) {
   .container .content .menu .sidebar {
     top: 85px;
   }
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 950px) {
   .container .content .menu .sidebar {
-    top: 85px;
-  }
-}
-@media screen and (max-width: 800px) {
-  .container .content .menu .sidebar {
-    top: 85px;
+    top: 81px;
   }
 }
 @media screen and (max-width: 700px) {
@@ -773,6 +770,11 @@ body {
 @media screen and (max-width: 340px) {
   .container .content .menu .sidebar {
     top: 100px;
+  }
+}
+@media screen and (max-width: 330px) {
+  .container .content .menu .sidebar {
+    top: 80px;
   }
 }
 .container .content .itemContent {
@@ -895,10 +897,9 @@ body {
 }
 .container .content .accountPage .userHeader figure .blankSpace {
   width: 30%;
-  height: 400px;
+  height: 550px;
   background-color: #1C2E43;
-  background-image: url(/images/menuBGL.jpg);
-  background-position: 0;
+  background-size: cover;
 }
 .container .content .accountPage .userHeader figure figcaption {
   width: 70%;
@@ -918,7 +919,7 @@ body {
   width: 100%;
   word-break: break-all;
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 800px) {
   .container .content .accountPage .userHeader {
     border: 15px solid #1C2E43;
   }
@@ -931,12 +932,12 @@ body {
   }
   .container .content .accountPage .userHeader figure figcaption {
     width: 100%;
-    padding: 5rem 0;
-    background-image: url(/images/menuBGL.jpg);
+    padding: 10rem 0;
     background-position: 50%;
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
+    background-image: url(../images/sky4.jpeg);
   }
   .container .content .accountPage .userHeader figure figcaption h2 {
     color: white;
@@ -1071,9 +1072,9 @@ body {
   display: flex;
   flex-direction: column;
   width: 90%;
+  gap: 6.5rem;
   height: -moz-fit-content;
   height: fit-content;
-  gap: 2vh;
   margin: 5rem auto;
 }
 .container .content form h1 {
