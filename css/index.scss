@@ -343,6 +343,50 @@ body{
             }
         }
 
+        .citation{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            padding-bottom: 2rem;
+            h1{
+                font-size: clamp(2rem, 6vw, 6rem);
+                text-align: center;
+                padding: 7% 0;
+            }
+            figure{
+                width: 95%;
+                display: flex;
+                flex-direction: row;
+                margin: auto;
+                gap: 1.5rem;
+                img{
+                    width:50%;
+                    height: auto;
+                    max-height: 80rem;
+                    margin: auto;
+                    border-radius: 2%;
+                }
+                figcaption{
+                    margin: auto;
+                    width: 50%;
+                    font-size: clamp(1rem, 2vw, 2rem);
+                    text-align: center;
+                }
+            }
+        }
+    
+        @media screen and (max-width:1200px){
+            .citation{
+                figure{
+                    flex-direction: column;
+                    img{
+                        width: 90%;
+                    }
+                }
+            }
+        }
+
         .reviews{
             width: 100%;
             display: flex;
@@ -416,6 +460,9 @@ body{
                     pointer-events: all;
                     border-radius: 50%;
                     background-color: rgba(255, 255, 255);
+                    img{
+                        width: 100%;
+                    }
                 }
             }
             @media screen and (max-width: 800px){
@@ -1039,91 +1086,52 @@ body{
                 }
             }
         }
-    }
-
-    .reservationIntro{
-        display: flex;
-        width: 100%;
-        height: fit-content;
-        background-color: #1C2E43;
-        .heroImg{
-            width: 45%;
-            figure{
-                width: 100%;
-                img{
-                    width: 100%;
-                    height: clamp(30rem, 70vw, 70rem);
-                }
-            }
-            figcaption{
-                font-size: clamp(1rem, 2vw, 1.5rem);
-                color: whitesmoke;
-                a{
-                    color: #E9C5B8;
-                }
-            }
-        }
-        .heroText{
-            width: 55%;
-            display: flex;
-            justify-content: center;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-            padding: 0 2rem;
-            gap: .76rem;
-
-            h1{
-                font-size: clamp(3.25rem, 7vw, 7rem);
-                color: #dca0aa;
-
-            }
-            h2{
-                font-size: clamp(1.4rem, 3vw, 3rem);
-                width: 90%;
-                color: whitesmoke;
-                text-wrap: balance;
-            }
-        }
-    }
-
-    @media screen and (max-width:1025px) {
         .reservationIntro{
-            flex-direction:column-reverse;
-            background-color: transparent;
+            display: flex;
+            width: 100%;
+            height: fit-content;
+            background-color: #1C2E43;
             .heroImg{
-                width: 100%;
+                width: 45%;
                 figure{
+                    width: 100%;
                     img{
                         width: 100%;
-                        height: clamp(40rem, 80vw, 80rem);
-                        
-                    }
-                    figcaption{
-                        text-align: end;
-                        color: black;
-                        a{
-                            color:#0d0d38
-                        }
+                        height: clamp(30rem, 70vw, 70rem);
                     }
                 }
-
+                figcaption{
+                    font-size: clamp(1rem, 2vw, 1.5rem);
+                    color: whitesmoke;
+                    a{
+                        color: #E9C5B8;
+                    }
+                }
             }
             .heroText{
-                width: 85%;
-                margin: auto;
-                padding: 7.5vh 0;
-                text-wrap: pretty;
+                width: 55%;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                padding: 0 2rem;
+                gap: .76rem;
+    
                 h1{
-                    color: black;
+                    font-size: clamp(3.25rem, 7vw, 7rem);
+                    color: #dca0aa;
+    
                 }
                 h2{
-                    width: 100%;
-                    color: black;
+                    font-size: clamp(1.4rem, 3vw, 3rem);
+                    width: 90%;
+                    color: whitesmoke;
+                    text-wrap: balance;
                 }
             }
         }
-    }
+
         form{
             display: flex;
             flex-direction: column;
@@ -1263,55 +1271,47 @@ body{
                     }
                 }
             }
-        }   
-
-    .citation{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        gap: 1.5rem;
-        padding-bottom: 2rem;
-        h1{
-            font-size: clamp(2rem, 6vw, 6rem);
-            text-align: center;
-            padding: 7% 0;
-        }
-        figure{
-            width: 95%;
-            display: flex;
-            flex-direction: row;
-            margin: auto;
-            gap: 1.5rem;
-            img{
-                width:50%;
-                height: auto;
-                max-height: 80rem;
-                margin: auto;
-                border-radius: 2%;
-            }
-            figcaption{
-                margin: auto;
-                width: 50%;
-                font-size: clamp(1rem, 2vw, 2rem);
-                text-align: center;
-            }
-        }
-    }
-
-    @media screen and (max-width:1200px){
-        .citation{
-            figure{
-                flex-direction: column;
-                img{
-                    width: 90%;
+        }  
+    
+        @media screen and (max-width:1025px) {
+            .reservationIntro{
+                flex-direction:column-reverse;
+                background-color: transparent;
+                .heroImg{
+                    width: 100%;
+                    figure{
+                        img{
+                            width: 100%;
+                            height: clamp(40rem, 80vw, 80rem);
+                            
+                        }
+                        figcaption{
+                            text-align: end;
+                            color: black;
+                            a{
+                                color:#0d0d38
+                            }
+                        }
+                    }
+    
+                }
+                .heroText{
+                    width: 85%;
+                    margin: auto;
+                    padding: 7.5vh 0;
+                    text-wrap: pretty;
+                    h1{
+                        color: black;
+                    }
+                    h2{
+                        width: 100%;
+                        color: black;
+                    }
                 }
             }
         }
-    }
 
-
-    
-
+    } 
 
     footer{
         background-color: #1C2E43;
