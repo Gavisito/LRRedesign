@@ -5,12 +5,11 @@
 }
 
 :root{
-    background-color: #ffffff;
+    background-color: #FEFEFA;
     font-size: 12px;
     font-family:'Faustina', 'lora', 'mate-sc-static', 'Merriweather-static';
-    color: #010B13;
+    color: black;
     scroll-behavior: smooth;
-    
 }
 
 ::selection{
@@ -282,7 +281,7 @@ body{
         .companyCore{
             width: 100%;
             height: fit-content;
-            background-color: #1C2E43;
+            background-color: #1C2E43; //changed bgc
             padding: 7rem 2.75rem;
             display: flex;
             flex-direction: column;
@@ -564,6 +563,11 @@ body{
             color: #ffffff;
             padding: clamp(2.5rem, 8vw, 8rem) 0;
         }
+        @media screen and (max-width:1025px){
+            .menuHeader{
+                margin-bottom: 0rem;
+            }
+        }
         .menu{
             display: flex;
             width: 100%;
@@ -806,7 +810,7 @@ body{
                     width: 100%;
                     position: sticky;
                     top: 130px;
-                    background-color: #1C2E43;
+                    background-color: #1C2E43; //check this
                     nav{
                         width: 100%;
                         ul{
@@ -1085,13 +1089,13 @@ body{
                     border-collapse: collapse;
                     font-size: clamp(1.25rem, 2vw, 1.75rem);
                     margin:0 auto;
-                    thead{
+                    #resInfoHead{
+                        background-color: #1C2E43;
                         th{
                             padding: 1rem 2.5rem;
                             text-wrap: nowrap;
                             position: sticky;
                             top: -1px;
-                            background-color: #1C2E43;
                             color: white;
                         }
                     }

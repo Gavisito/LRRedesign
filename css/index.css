@@ -5,10 +5,10 @@
 }
 
 :root {
-  background-color: #ffffff;
+  background-color: #FEFEFA;
   font-size: 12px;
   font-family: "Faustina", "lora", "mate-sc-static", "Merriweather-static";
-  color: #010B13;
+  color: black;
   scroll-behavior: smooth;
 }
 
@@ -540,6 +540,11 @@ body {
   color: #ffffff;
   padding: clamp(2.5rem, 8vw, 8rem) 0;
 }
+@media screen and (max-width: 1025px) {
+  .container .content .menuHeader {
+    margin-bottom: 0rem;
+  }
+}
 .container .content .menu {
   display: flex;
   width: 100%;
@@ -1034,12 +1039,14 @@ body {
   font-size: clamp(1.25rem, 2vw, 1.75rem);
   margin: 0 auto;
 }
-.container .content .accountPage .tableReserveInfo table thead th {
+.container .content .accountPage .tableReserveInfo table #resInfoHead {
+  background-color: #1C2E43;
+}
+.container .content .accountPage .tableReserveInfo table #resInfoHead th {
   padding: 1rem 2.5rem;
   text-wrap: nowrap;
   position: sticky;
   top: -1px;
-  background-color: #1C2E43;
   color: white;
 }
 .container .content .accountPage .tableReserveInfo table tbody tr th {
