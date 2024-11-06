@@ -52,11 +52,20 @@
                                 <li><a href="#breadsection">Bread</a></li>
                                 <li><a href="#latinosection">Latino Meals</a></li>
                             </ul>
+                            <div class="filter">
+                                <h2>Food Filter</h2>
+                                <div class="filterScroll">
+                                    <label><input checked type="checkbox" id="all" value="all">All</label>
+                                    <label><input type="checkbox" id="pasta" value="pasta"> Pasta</label>
+                                    <label><input type="checkbox" id="bread" value="bread"> Bread</label>
+                                    <label><input type="checkbox" id="latino" value="latino"> Latino Food</label>
+                                </div>
+                            </div>
                         </nav>
                     </div>
-                    <div class="menuOptions">
-                        <section>
-                            <h2 id="pastasection">Pasta</h2>
+                    <div class="menuOptions" id="menuOptions">
+                        <section id="pastasection">
+                            <h2>Pasta</h2>
                             <div class="menuSlider">
                                 <figure>
                                     <img loading="lazy" src="./images/pomodoro.jpeg" alt="A photo of Pasta Pomodoro that i baked and cooked">
@@ -74,8 +83,8 @@
                                 </figure>
                             </div>
                         </section>
-                        <section>
-                            <h2  id="breadsection">Bread</h2>
+                        <section id="breadsection">
+                            <h2>Bread</h2>
                             <div class="menuSlider">
                                 <figure>
                                     <img loading="lazy" src="./images/concha.jpg" alt="A photo on concha taken by GERARDO MR">
@@ -85,8 +94,8 @@
                                 </figure>
                             </div>
                         </section>
-                        <section>
-                            <h2 id="latinosection">Latino Meals</h2>
+                        <section id="latinosection">
+                            <h2>Latino Meals</h2>
                             <div class="menuSlider">
                                 <figure>
                                     <a href="./empanada.html"><img loading="lazy" src="./images/empanada.jpeg" alt="Photo of empanada that I made"></a>
@@ -226,5 +235,7 @@
         <script src="./js/mainMenu.js" async defer></script>
         <script src="./js/accountBTN.js" async defer></script>
         <script src="./js/randomIMG.js" async defer></script>
+        <script src="./js/menuFilter.js" async defer></script>
+
     </body>
 </html>

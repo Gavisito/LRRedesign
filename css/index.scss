@@ -560,9 +560,8 @@ body{
             align-items: center;
             justify-content: center;
             background-color: #1C2E43;
-            border-bottom: 2px solid white;
-            color: #ffffff;
             margin-bottom: 7rem;
+            color: #ffffff;
             padding: clamp(2.5rem, 8vw, 8rem) 0;
         }
         .menu{
@@ -579,14 +578,18 @@ body{
                 text-wrap: balance;
                 position: sticky;
                 top:200px;
-                padding-left: 1.5rem;
+                padding: 0 1.5rem;
                 nav{
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
                     ul{
                         display: flex;
                         flex-direction: column;
                         list-style: none;
                         justify-content: space-between;
                         gap: 6rem;
+                        height: fit-content;
                         li{
                             a{
                                 text-decoration: none;
@@ -615,6 +618,56 @@ body{
                             }
                         }
                     }
+                    .filter{
+                        padding: .5rem 0;
+                        display: flex;
+                        flex-direction: column;
+                        height: fit-content;
+                        margin-top: 2rem;
+                        gap: 10px;
+                        h2{
+                            position: sticky;
+                            top: 0;
+                            left: 0;
+                        }
+
+                        .filterScroll{
+                            display: flex;
+                            flex-direction: column;
+                            align-items: left;
+                            label{
+                                font-size: 2rem;
+                            }
+                            input{
+                                width: 1.75rem;
+                                height: 1.75rem;
+                            }
+                        }
+                    }
+                    @media screen and (max-width:1025px){
+                        .filter{
+                            margin-top: 0;
+                            flex-direction: row;
+                            color: white;
+                            font-size: .75rem;
+                            text-wrap: nowrap;
+                            align-items: center;
+                            .filterScroll{
+                                flex-direction: row;
+                                overflow-x: auto;
+                                overflow-y: hidden;
+                                gap: 25px;
+                                label{
+                                    text-wrap: nowrap;
+                                    font-size: 1.25rem;
+                                }
+                                input{
+                                    width: 1.25rem;
+                                    height: 1.25rem;
+                                }
+                            }
+                        }
+                    }
                 }
             }
             .menuOptions{
@@ -626,9 +679,9 @@ body{
                 section{
                     display: flex;
                     flex-direction: column;
+                    scroll-margin-top: 17rem;
                     h2{
                         font-size: clamp(2.5rem, 3.5vw, 3.5rem);
-                        scroll-margin-top: 170px;
                         text-decoration: underline;
                     }
                     .menuSlider{
@@ -1142,7 +1195,7 @@ body{
             }
         }
 
-        form{
+        #reservationForm{
             display: flex;
             flex-direction: column;
             width: 90%;
@@ -1324,7 +1377,6 @@ body{
                 }
             }
         }
-
     } 
 
     footer{
