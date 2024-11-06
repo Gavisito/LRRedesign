@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.mascot {
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 30rem;
+  right: 0;
+  z-index: 100;
+}
+.mascot .head {
+  width: 75px;
+  height: 70px;
+  border-radius: 0% 0% 40% 40%;
+  background-color: burlywood;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mascot .head .chefHat {
+  position: absolute;
+  top: -50px;
+  width: 75px;
+  height: 70px;
+  background-color: whitesmoke;
+  border-radius: 10% 10% 0% 0%;
+  z-index: 1;
+  display: flex;
+  justify-content: space-around;
+  border: 1px solid lightgrey;
+}
+.mascot .head .chefHat .lining {
+  width: 2px;
+  height: 80%;
+  background-color: lightgray;
+}
+.mascot .head .leftEye {
+  left: 20px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: black;
+  position: absolute;
+}
+.mascot .head .rightEye {
+  right: 20px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: black;
+  position: absolute;
+}
+.mascot .head .mouth {
+  width: 30px;
+  height: 10px;
+  border-radius: 0% 0% 50% 50%;
+  background-color: black;
+  position: absolute;
+  bottom: 10px;
+}
+.mascot .body {
+  width: 100px;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.mascot .body .leftArm, .mascot .body .rightArm {
+  width: 25px;
+  height: 50px;
+  border-radius: 15%;
+  background-color: whitesmoke;
+  border: 0.5px solid lightgrey;
+}
+.mascot .body .rightArm {
+  transform: rotate(50deg) translate(-20px, -20px);
+}
+.mascot .body .belly {
+  width: 80px;
+  height: 100px;
+  background-color: whitesmoke;
+  border-radius: 10%;
+  display: flex;
+  justify-content: center;
+  border: 0.5px solid lightgrey;
+}
+.mascot .body .belly .lining {
+  width: 2px;
+  height: 80%;
+  background-color: grey;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.mascot .body .belly .buttons {
+  width: 7px;
+  height: 5px;
+  background-color: grey;
+  border: 0.5px solid lightgrey;
+  border-radius: 50%;
+  justify-content: space-around;
+}
+.mascot .legs {
+  display: flex;
+  flex-direction: row;
+  width: 200px;
+  height: -moz-fit-content;
+  height: fit-content;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+.mascot .legs .leftLeg, .mascot .legs .rightLeg {
+  width: 25px;
+  height: 50px;
+  border-radius: 25%;
+  background-color: whitesmoke;
+  border: 0.5px solid lightgrey;
+}/*# sourceMappingURL=mascot.css.map */

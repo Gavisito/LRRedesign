@@ -218,14 +218,15 @@ body {
 .container .content .intro .mainimg {
   display: flex;
   flex-direction: column;
+  overflow: hidden;
+  border: 3px solid white;
+  outline: 5px solid #242525;
 }
 .container .content .intro .mainimg img {
   margin: auto;
   width: 100%;
   height: clamp(20rem, 50vw, 50rem);
   background-size: cover;
-  border: 3px solid white;
-  outline: 5px solid #242525;
   background-color: #9E919A;
 }
 .container .content .intro .mainimg figcaption {
@@ -1448,4 +1449,12 @@ body {
 .container footer .footer-info .branding h2 {
   font-size: clamp(3rem, 6vw, 6rem);
   text-decoration: underline;
+}
+
+#colorButton {
+  width: -moz-fit-content;
+  width: fit-content;
+  height: auto;
+  padding: 0.5rem 1.25rem;
+  margin-top: 1rem;
 }/*# sourceMappingURL=index.css.map */
