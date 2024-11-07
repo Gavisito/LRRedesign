@@ -87,7 +87,22 @@
   border: 0.5px solid lightgrey;
 }
 .mascot .body .rightArm {
-  transform: rotate(50deg) translate(-20px, -20px);
+  animation-name: waving;
+  animation-duration: 1.25s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  z-index: -1;
+}
+@keyframes waving {
+  0% {
+    transform: rotate(80deg);
+  }
+  50% {
+    transform: rotate(0deg) translate(0px, -15px);
+  }
+  100% {
+    transform: rotate(80deg);
+  }
 }
 .mascot .body .belly {
   width: 80px;
@@ -130,4 +145,19 @@
   border-radius: 25%;
   background-color: whitesmoke;
   border: 0.5px solid lightgrey;
+}
+
+.removeMascot {
+  animation-name: removeMascot;
+  animation-duration: 2s;
+  animation-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  animation-iteration-count: infinite;
+}
+@keyframes removeMascot {
+  0% {
+    opacity: 100;
+  }
+  100% {
+    opacity: 0;
+  }
 }/*# sourceMappingURL=mascot.css.map */
