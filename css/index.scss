@@ -1387,11 +1387,30 @@ body{
             }
         }
 
+        .contactHero{
+            background-image: url("../images/sky1.jpeg");
+            background-position: 50% 15%;
+            background-size: cover;
+            width: 100%;
+            height: 32rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-size: clamp(1.5rem, 2vw, 2rem);
+            h2{
+                font-size: clamp(1.25rem, 1.5vw, 1.5rem);
+                width: 70%;
+                margin: 0 15%;
+                text-align: center;
+            }
+        }
+
 
         .contactList {
             width: 90%;
-            margin: auto;
             overflow-x: auto;
+            margin: 2% 5% ;
         }
 
     } 

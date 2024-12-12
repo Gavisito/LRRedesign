@@ -5,14 +5,14 @@ function mascot(){
     console.log('mascot connected')
     var mascot = document.getElementById('mascot');
     mascot.setAttribute('style', 'display: flex');
-    count = setInterval(transitionRemoval, 5000);//once 5 seconds has past, it will call the transitionRemoval function to end animation
+    count = setInterval(transitionRemoval, 1500);//once 5 seconds has past, it will call the transitionRemoval function to end animation
 }
 
 //the the transitionRemoval provides a way to smoothly remove the mascot.
 function transitionRemoval(){
     var mascot = document.getElementById('mascot');
     mascot.classList.add('removeMascot'); //this is the class that using opacity to remove the mascot from view
-    setTimeout(removeMascot, 2000); //this sets a period of time for the opacity transition to run before calling the actuall removal from the DOM; otherwise without it it would not show opacity transition
+    setTimeout(removeMascot, 1600); //this sets a period of time for the opacity transition to run before calling the actuall removal from the DOM; otherwise without it it would not show opacity transition
 }
 
 function removeMascot(){

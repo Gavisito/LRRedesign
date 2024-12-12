@@ -5,18 +5,15 @@
 }
 
 .mascot {
-  width: -moz-fit-content;
-  width: fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   position: fixed;
-  top: 30rem;
-  right: 0;
-  z-index: 100;
+  z-index: 10000;
+  background-color: slategray;
 }
 .mascot .head {
   width: 75px;
