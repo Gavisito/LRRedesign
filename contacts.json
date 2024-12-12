@@ -1,0 +1,28 @@
+{
+    "contacts": [
+        {
+            "person": "Anthony Gavidia-Vasquez",
+            "role": "Restaurant Owner",
+            "phone": "(123)-555-3131",
+            "email": "agavidia@gmu.edu"
+        },
+        {
+            "person": "Valeria Rodriguez",
+            "role": "Head Chef",
+            "phone": "(125)-439-3223",
+            "email": "example@gmail.com"
+        },
+        {
+            "person": "Rozeo Impaz",
+            "role": "Customer Support",
+            "phone": "(124)-908-0090",
+            "email": "example@gmail.com"
+        },
+        {
+            "person": "Isabelle Sicis",
+            "role": "Hostess",
+            "phone": "(233)-787-9900",
+            "email": "example@gmail.com"
+        }
+    ]
+}

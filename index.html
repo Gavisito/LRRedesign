@@ -11,6 +11,9 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Faustina:ital,wght@0,300..800;1,300..800&family=Lora:ital,wght@0,400..700;1,400..700&family=Mate+SC&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
     </head>
     <body>
         <div class="container">
@@ -37,12 +40,32 @@
                 <nav>
                     <ul>
                         <li><a href="./index.html">Home</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
                         <li><a href="./menu.html">Menu</a></li>
                         <li><a href="./reservation.html">Reservation</a></li>
                     </ul>
                 </nav>
             </header>
             <div class="content">
+                <div id="specialOffer" title="Holiday Special Offer">
+                    <h2>Get 20% off on your next meal at your reservation Before December 15th!!!</h2>
+                    <script>
+                        $(function () { //this create the dialog box
+                            $("#specialOffer").dialog({
+                                autoOpen: true, //opens as soon as the page oad
+                                modal: true, //this is whether or not i want the grey background and no interaction outside of the modal
+                                buttons: {
+                                    "Reserve Table": function (){ //this button redirects the user to go and reserve a table
+                                        window.open('reservation.html', "_self");
+                                    },
+                                    "Close": function () { //this close the dialog and stays in the homepage
+                                        $(this).dialog("close");
+                                    }
+                                }
+                            });
+                        });
+                    </script>
+                </div>
                 <article class="intro" id="mascotParent">
                     <h1>Welcome & Come Explore Our Cuisines</h1>
                     <div class="mascot" id="mascot">
@@ -91,7 +114,7 @@
                             have been prepared according to the multimedia fair use guidelines and are restricted 
                             from further use”</p>
                     </Section>
-                </article>  
+                </article>
                 <article class="companyCore">
                     <h1>Wonder- No, Dream of Our Mission</h1>
                     <section>
@@ -132,41 +155,7 @@
                             Take Theirs!
                         </h2>
                         <div class="carousel" id="carouselNav">
-                            <div class="cItem">
-                                <h3>Robert P.</h3>
-                                <p> The presentation of the meal felt carefully organized and was very tasty!
-                                </p>
-                            </div>
-                            <div class="cItem">
-                                <h3>William L.</h3>
-                                <p>I loved the aethethic of the restaurant. The backlit aquarium on the side of the tbale
-                                    was a very nice touch. It provided a bit of entertainment!
-                                </p>
-                            </div>
-                            <div class="cItem">
-                                <h3>Karen L.</h3>
-                                <p> Their food is amazinggg!!! Although there was a bit of a wait for the 
-                                    food to come to our table, it was definetely worth the wait. The staff was also kind and 
-                                    understanding to our specific dietary needs and refined their meals accordingly. Very 
-                                    considerate of them, truly.
-                                </p>
-                            </div>
-                            <div class="cItem">
-                                <h3>Eri V.</h3>
-                                <p>I like the cozy vibe that this place gives off. I've been a frequent customer and they
-                                    have yet to disappointment me. I doubt they will.
-                                </p>
-                            </div>
-                            <div class="cItem">
-                                <h3>Carlos Y.</h3>
-                                <p>Great place to take the family out to eat for the night. THe kids loved the aquariums!
-                                </p>
-                            </div>
-                            <div class="cItem">
-                                <h3>Anthony G.</h3>
-                                <p>W eats 😛🙏🏽💯
-                                </p>
-                            </div>
+                         <!--This is where the XML request will put the information from reviews.json into-->
                         </div>
                     </section>
                     <section class="navDots">
@@ -177,7 +166,7 @@
                             <img src="./images/circle-arrow-right-solid.svg" alt="next-button">
                         </div>
                     </section>
-                </article> 
+                </article>
                 <article class="redirect">
                     <hr>
                     <h1>Explore Further Into Our Shop!</h1>
@@ -214,6 +203,7 @@
                         <nav>
                             <ul>
                                 <li><a href="./index.html">Home</a></li>
+                                <li><a href="./contact.html">Contact</a></li>
                                 <li><a href="./menu.html">Menu</a></li>
                                 <li><a href="./reservation.html">Reservation</a></li>
                             </ul>

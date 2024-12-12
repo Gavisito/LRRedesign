@@ -30,7 +30,7 @@ function paletteColor(color){
     //the following if statements are used because it check if it exist on respective html pages. 
     //if it does then it changes the style. if it doesnt exist on the pgae then it does nothing
     if (companyCore) {
-        companyCore.style.backgroundColor = color; 
+        companyCore.setAttribute('style','background-color:' + color)
     }
     if (cItems){
         for (let i = 0; i < cItems.length; ++i){ //when using getElementsByClassName, it is needed to iterate because it returns array/collection
@@ -92,7 +92,7 @@ colorButton.addEventListener('click', chooseColor, false );//when the change col
 window.addEventListener('load', getColor, false);
 window.addEventListener('resize', getColor);//when the viewport changes width then it will adjust the navbar bgcolo accordingly. 
                                             //Useful when user on mobile changes between landscape and vertical view
-
+//the following are class/id name of the elements that I am changing the background-color of
 //companyCore
 
 //cItem

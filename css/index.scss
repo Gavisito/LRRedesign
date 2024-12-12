@@ -992,7 +992,10 @@ body{
                 }
             }
         }
-
+        .rowShade{
+            background-color: #1C2E43;
+            color: white;
+        }
         .accountPage{
             display: flex;
             width: 100%;
@@ -1078,6 +1081,7 @@ body{
                 margin-top:4rem;
                 margin-bottom: 2rem;
             }
+
     
             .tableReserveInfo{
                 width: 85%;
@@ -1382,6 +1386,14 @@ body{
                 }
             }
         }
+
+
+        .contactList {
+            width: 90%;
+            margin: auto;
+            overflow-x: auto;
+        }
+
     } 
 
     footer{

@@ -944,6 +944,10 @@ body {
   background-color: #1C2E43;
   color: white;
 }
+.container .content .rowShade {
+  background-color: #1C2E43;
+  color: white;
+}
 .container .content .accountPage {
   display: flex;
   width: 100%;
@@ -1300,6 +1304,11 @@ body {
     width: 100%;
     color: black;
   }
+}
+.container .content .contactList {
+  width: 90%;
+  margin: auto;
+  overflow-x: auto;
 }
 .container footer {
   background-color: #1C2E43;

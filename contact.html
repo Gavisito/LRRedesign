@@ -3,13 +3,16 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Lunita Hermosa | Empanada</title>
-        <meta name="description" content="Empanada page where you can see how our empanada could look like and our Recommended pairings">
+        <title>Lunita Hermosa | Contact Directory</title>
+        <meta name="description" content="Contact list of our employees">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="./css/index.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Faustina:ital,wght@0,300..800;1,300..800&family=Lora:ital,wght@0,400..700;1,400..700&family=Mate+SC&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/2.1.8/css/dataTables.dataTables.min.css">
+        <script src="https://cdn.datatables.net/2.1.8/js/dataTables.min.js "></script>
     </head>
     <body>
         <div class="container">
@@ -43,56 +46,46 @@
                 </nav>
             </header>
             <div class="content">
-                <div class="itemContent">
-                    <div class="itemDescription">
-                        <h1>Empanada</h1>
-                        <p>A dish loved by the latino community. Including major ingrediatns such as beef,
-                            sweet potatoes, and the dough to hold everything together. 
-                        </p>
-                        <p>Reserve a table before we're all out for the tonight!</p>
-                        <a id="rBtn" href="./reservation.html">Reserve Table</a>
-                    </div>
-                    <figure class="itemIMG">
-                        <img src="./images/empanada.jpeg" alt="7 empanadas on a plate">
-                    </figure>
-                </div>
-                <div class="tableTitle"><h1>Our Recommendation</h1></div>
-                <div class="itemPairing">
-                    <table border=1>
+                <div>
+                
+                <div class="contactList">
+                    <table border=1 id="contactTable">
                         <thead>
-                            <tr>
-                                <th>Categories</th>
-                                <th>Recommended</th>
-                                <th>Alternative</th>
+                            <tr class='rowShade'>
+                                <th>Name</th>
+                                <th>Role</th>
+                                <th>Phone</th>
+                                <th>Email</th>
                             </tr>
                         </thead>
                         <tbody>
-                            <tr class="rowShade">
-                                <th>Serving Size</th>
-                                <td>Ideal for one person due to two-three empanadas per person</td>
-                                <td>However, You can share them with you friends, family or significant others!</td>
-                            </tr>
-                            <tr>
-                                <th>Side Dish</th>
-                                <td>Jasmine Rice when you want to mix the beef and potatoes! Very versatiles meal to enjoy</td>
-                                <td>A side dish of Platanos can introduce sweet taste to the meal!</td>
-                            </tr>
-                            <tr class="rowShade">
-                                <th>Drink Pairing</th>
-                                <td>Any soda of your choosing; However, our guests enjoyed the meal with Coca-Cola!</td>
-                                <td>Welcome to choose any of drink option in our menu; however, horchata is
-                                     great if you really want to feel immersed in latin0 cuisine culture </td>
-                            </tr>
-                            <tr>
-                                <th>Dessert Pairing</th>
-                                <td>Flan is a great sweet ending to your meal</td>
-                                <td>Concha is another dessert that you can order to have something not too sweet, but not too dry!</td>
-                            </tr>
-                            <tr class="rowShade">
-                                <th>Time of Day</th>
-                                <td>Dinner time</td>
-                                <td>Lunchtime</td>
-                            </tr>
+                            <script>
+                                $(document).ready(function(){
+                                        $.ajax({
+                                            type: "GET",
+                                            url: "contacts.json",
+                                            dataType: "json",
+                                            success: function(data){
+                                                    $.each(data.contacts, function(index, contact){
+                                                        var name = contact.person
+                                                        var role = contact.role
+                                                        var phone = contact.phone
+                                                        var email = contact.email
+                                                        var tableRow =  "<tr>" + 
+                                                                                "<td>" + name + "</td>" + 
+                                                                                "<td>" + role + "</td>" + 
+                                                                                "<td>" + phone + "</td>" + 
+                                                                                "<td>" + email + "</td>" +  
+                                                                        "</tr>"
+                                                        $("#contactTable tbody").append(tableRow);
+                                                    })
+                                                    new DataTable('#contactTable');
+                                                }
+                                            }
+                                        )   
+                                    }
+                                )
+                            </script>
                         </tbody>
                     </table>
                 </div>
