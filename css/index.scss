@@ -1076,7 +1076,7 @@ body{
             }
             h1{
                 font-size: clamp(2.25rem, 3.75vw, 3.75rem);
-                width: 100%;
+                width: 90%;
                 text-align: center;
                 margin-top:4rem;
                 margin-bottom: 2rem;
@@ -1085,39 +1085,41 @@ body{
     
             .tableReserveInfo{
                 width: 85%;
-                max-height: 500px;
                 margin: auto;
-                overflow: auto;
 
-                table{
-                    min-width: 1000px;
-                    border-collapse: collapse;
-                    font-size: clamp(1.25rem, 2vw, 1.75rem);
-                    margin:0 auto;
-                    #resInfoHead{
-                        background-color: #1C2E43;
-                        th{
-                            padding: 1rem 2.5rem;
-                            text-wrap: nowrap;
-                            position: sticky;
-                            top: -1px;
-                            color: white;
+                article {
+                    width: 100%;
+                    h1 {
+                        font-size: 3em;
+                        margin: 4.5rem auto;
+                        text-align: center;
+                    }
+                    .reservation-grid {
+                        display: grid;
+                        grid-template-columns: repeat(2, 1fr);
+                        gap: 15px;
+                        margin-top: 20px;
+                        h2 {
+                            font-size: 2.5em;
+                            text-decoration: underline;
+                            padding-bottom: 0.5rem;
+                        }
+                        p{
+                            font-size: 2rem;
+                            background-color: #9e919a0d;
+                            padding: 1.75rem 1rem;
                         }
                     }
-                    tbody{
-                        tr{
-                            th{
-                                padding: 1rem 2.5rem;
-                            }
-                            td{
-                                padding: 1.5rem 2rem;
-                                font-size: 1.5rem;
-                                color: black;
-                            }
-                        }
+                    .reservation-grid > div:last-child {
+                        grid-column: span 2;
                     }
-                    .rowShade{
-                        background-color: #1c2e4320;
+                    @media (max-width: 600px) {
+                        .reservation-grid {
+                            grid-template-columns: 1fr;
+                        }
+                        .reservation-grid > div:last-child {
+                            grid-column: span 1;
+                        }
                     }
                 }
             }
@@ -1125,7 +1127,7 @@ body{
         @media screen and (max-width: 800px) {
             .accountPage{
                 .tableReserveInfo{
-                    width: 95%;
+                    width: 85%;
                 }
             }
         }

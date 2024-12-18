@@ -13,26 +13,68 @@ function displayData() {
     var showResult = document.getElementById('reservationInformation');//this points to the table body to enter rows.
     // 'reservationData' is boolean to check if it is true that there is data in the local stroage object 'reserveData'
     if (reservationData) {//the case where there is data to insert into the table body from form submission.
-        storage += "<tr>";
-            storage += "<td>" + reservationData[0] + "<input id='editName' style='margin-left:1rem; padding:0.25rem 0.5rem' type='button' value='edit name'>" + "</td>" ;
-            storage += "<td>" + reservationData[1] + "</td>" ;
-            storage += "<td>" + reservationData[2] + "</td>" ;
-            storage += "<td>" + reservationData[3] + "</td>" ;
-            storage += "<td>" + reservationData[4] + "</td>" ;
-            storage += "<td>" + reservationData[5] + "</td>" ;
-            storage += "<td>" + reservationData[6] + "</td>" ;
-        storage += "</tr>" ;
+        storage = `
+        <div>
+            <h2>Name</h2>
+            <p> ${reservationData[0]} </p>
+        </div>
+        <div>
+            <h2>Phone</h2>
+            <p> ${reservationData[2]} </p>
+        </div>
+        <div>
+            <h2>Email</h2>
+            <p> ${reservationData[1]} </p>
+        </div>
+        <div>
+            <h2>Date</h2>
+            <p> ${reservationData[3]} </p>
+        </div>
+        <div>
+            <h2>Time</h2>
+            <p> ${reservationData[4]} </p>
+        </div>
+        <div>
+            <h2>Attendance</h2>
+            <p> ${reservationData[5]} </p>
+        </div>
+        <div>
+            <h2>Reservation Notes</h2>
+            <p> ${reservationData[6]} </p>
+        </div>
+        `
     }
     else{ //when no has been intially enter by the user the following row will be entered in the table.
-        storage += "<tr>";
-            storage += "<td>" + "No Data" + "</td>" ;
-            storage += "<td>" + "No Data" + "</td>" ;
-            storage += "<td>" + "No Data" + "</td>" ;
-            storage += "<td>" + "No Data" + "</td>" ;
-            storage += "<td>" + "No Data" + "</td>" ;
-            storage += "<td>" + "No Data" + "</td>" ;
-            storage += "<td>" + "No Data" + "</td>" ;
-        storage += "</tr>" ;
+        storage = `
+        <div>
+            <h2>Name</h2>
+            <p> no data </p>
+        </div>
+        <div>
+            <h2>Phone</h2>
+            <p> no data </p>
+        </div>
+        <div>
+            <h2>Email</h2>
+            <p> no data </p>
+        </div>
+        <div>
+            <h2>Date</h2>
+            <p> no data </p>
+        </div>
+        <div>
+            <h2>Time</h2>
+            <p> no data </p>
+        </div>
+        <div>
+            <h2>Attendance</h2>
+            <p> no data </p>
+        </div>
+        <div>
+            <h2>Reservation Notes</h2>
+            <p> no data </p>
+        </div>
+        `
     }
     
     showResult.innerHTML = storage;
